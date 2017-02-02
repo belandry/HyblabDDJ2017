@@ -1,3 +1,27 @@
 {
-  "data": "Some data from JSON :-)"
+  "personne isolé":{
+  	"bellevue nantes Saint herblain" : 19.424,
+  	"Dervaillières": 4.973,
+  	"Malakoff": 3085,
+  	"Breil Malville": 3932,
+  	"Quartier Nord": 11.594,
+  	"Port Boyer": 2179,
+  	"Bottière pin sec": 5.348,
+  	"Clos Toreau": 2498,
+  	"La Halveque": 4727,
+  	"Sillon de Bretagne": 1843,
+  	"Château": 4035,
+  	"Plaisance": 2470,
+  	"Ranzay grand clos":2664,
+  	"Total des territoires prioritaires de Nantes métropole": 68771
+
+  },
+  "Revenu médian":{
+  	"Bellevue": 163,
+  	"Nantes métropole": 679
+  },
+  "Ménages composés de personne seules à bas revenu":{
+  	"Bellevue Nantes Saint Herblain": 0.33,
+  	"Nantes métropole": 0.192,
+  }
 }
