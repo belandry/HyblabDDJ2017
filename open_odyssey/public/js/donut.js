@@ -1,0 +1,131 @@
+var myConfig = {
+  "type":"ring",
+  "title":{
+    "text":"Value Boxes"
+  },
+  "subtitle":{
+    "text":"with placement set to 'center' to show the total pie value",
+    "font-weight":"normal"
+  },
+  "plot":{
+    "value-box":{
+      "text":"%pie-total-value",
+      "placement":"center",
+      "font-color":"black",
+      "font-size":35,
+      "font-family":"Georgia",
+      "font-weight":"normal",
+      "rules":[
+        {
+          "rule":"%p != 0",
+          "visible":false
+        }
+      ]
+    },
+    "tooltip":{
+      "text":"%t: %v (%npv%)",
+      "font-color":"black",
+      "font-family":"Georgia",
+      "text-alpha":1,
+      "background-color":"white",
+      "alpha":0.7,
+      "border-width":1,
+      "border-color":"#cccccc",
+      "line-style":"dotted",
+      "border-radius":"10px",
+      "padding":"10%",
+      "placement":"node:center"
+    },
+    "slice":"50%",
+    "border-width":1,
+    "border-color":"#cccccc",
+    "line-style":"dotted"
+  },
+  "plotarea":{
+    "margin-top":"12%"
+  },
+  "series":[
+    {
+      "values":[234],
+      "background-color":"#cc0000",
+      "text":"Alpha"
+    },
+    {
+      "values":[121],
+      "background-color":"#ff3300",
+      "text":"Beta"
+    },
+    {
+      "values":[77],
+      "background-color":"#ff6600",
+      "text":"Gamma"
+    },
+    {
+      "values":[65],
+      "background-color":"#ff9933",
+      "text":"Delta"
+    },
+    {
+      "values":[59],
+      "background-color":"#ffcc00",
+      "text":"Epsilon"
+    },
+    {
+      "values":[35],
+      "background-color":"#ace600",
+      "text":"Zeta"
+    },
+    {
+      "values":[34],
+      "background-color":"#88cc00",
+      "text":"Eta"
+    },
+    {
+      "values":[31],
+      "background-color":"#339933",
+      "text":"Theta"
+    },
+    {
+      "values":[16],
+      "background-color":"#66ccff",
+      "text":"Iota"
+    },
+    {
+      "values":[14],
+      "background-color":"#3399ff",
+      "text":"Kappa"
+    },
+    {
+      "values":[13],
+      "background-color":"#0066ff",
+      "text":"Lambda"
+    },
+    {
+      "values":[12],
+      "background-color":"#3333cc",
+      "text":"Mu"
+    },
+    {
+      "values":[11],
+      "background-color":"#6600ff",
+      "text":"Nu"
+    },
+    {
+      "values":[10],
+      "background-color":"#9933ff",
+      "text":"Xi"
+    },
+    {
+      "values":[9],
+      "background-color":"#9999ff",
+      "text":"Omicron"
+    }
+  ]
+};
+
+zingchart.render({ 
+	id : "myChart", 
+	data : myConfig, 
+	height: 400, 
+	width: "100%" 
+});
