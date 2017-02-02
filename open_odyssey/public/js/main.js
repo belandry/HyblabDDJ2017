@@ -1,11 +1,11 @@
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
-        triggerElement: "#parallax",
+        triggerElement: "#slide1",
         triggerHook: "onEnter",
     })
     .duration('200%')
-    .setTween("#parallax", {
+    .setTween("#slide1", {
         backgroundPosition: "50% 100%",
         ease: Linear.easeNone
     })
