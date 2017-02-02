@@ -1,10 +1,12 @@
+//var data = $.getJSON("data/dummy.json", function(data){};  
+
 var myConfig = {
   "type":"ring",
   "title":{
-    "text":"Value Boxes"
+    "text":"Bellevue,"
   },
   "subtitle":{
-    "text":"with placement set to 'center' to show the total pie value",
+    "text":"quartier prioritaire le plus peuplée de l’agglomération nantaise",
     "font-weight":"normal"
   },
   "plot":{
@@ -46,79 +48,69 @@ var myConfig = {
   },
   "series":[
     {
-      "values":[234],
+      "values":[19424],
       "background-color":"#cc0000",
-      "text":"Alpha"
+      "text": "Bellevue Nantes St Herblain"
     },
     {
-      "values":[121],
+      "values":[4973],
       "background-color":"#ff3300",
-      "text":"Beta"
+      "text":"Dervaillières"
     },
     {
-      "values":[77],
+      "values":[3085],
       "background-color":"#ff6600",
-      "text":"Gamma"
+      "text":"Malakoff"
     },
     {
-      "values":[65],
+      "values":[3932],
       "background-color":"#ff9933",
-      "text":"Delta"
+      "text":"Breil Malville"
     },
     {
-      "values":[59],
+      "values":[11594],
       "background-color":"#ffcc00",
-      "text":"Epsilon"
+      "text":"Quartier Nord"
     },
     {
-      "values":[35],
+      "values":[2179],
       "background-color":"#ace600",
-      "text":"Zeta"
+      "text":"Port Boyer"
     },
     {
-      "values":[34],
+      "values":[5348],
       "background-color":"#88cc00",
-      "text":"Eta"
+      "text":"Bottière pin sec"
     },
     {
-      "values":[31],
+      "values":[2498],
       "background-color":"#339933",
-      "text":"Theta"
+      "text":"Clos Toreau"
     },
     {
-      "values":[16],
+      "values":[4727],
       "background-color":"#66ccff",
-      "text":"Iota"
+      "text":"La Halveque"
     },
     {
-      "values":[14],
+      "values":[1843],
       "background-color":"#3399ff",
-      "text":"Kappa"
+      "text":"Sillon de Bretagne"
     },
     {
-      "values":[13],
+      "values":[4035],
       "background-color":"#0066ff",
-      "text":"Lambda"
+      "text":"Château"
     },
     {
-      "values":[12],
+      "values":[2470],
       "background-color":"#3333cc",
-      "text":"Mu"
+      "text":"Plaisance"
     },
     {
-      "values":[11],
+      "values":[2664],
       "background-color":"#6600ff",
-      "text":"Nu"
-    },
-    {
-      "values":[10],
-      "background-color":"#9933ff",
-      "text":"Xi"
-    },
-    {
-      "values":[9],
-      "background-color":"#9999ff",
-      "text":"Omicron"
+      "text":"Ranzay grand clos"
     }
   ]
 };

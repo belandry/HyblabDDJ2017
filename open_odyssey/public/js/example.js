@@ -24,11 +24,3 @@ fetch('data/dummy.json')
             .textContent = json.data;
     });
 
-     var data = anychart.data.set([
-["Department Stores", 637166],
-["Discount Stores", 721630],
-["Men's/Women's Specialty Stores", 148662],
-["All other outlets", 90000]
-  ]);
-  var chart = anychart.bar();
-  chart.bar(data);
