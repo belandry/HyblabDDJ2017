@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+ 
+.slide .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+ 
+.intro {
+    background: #305a5b;
+}
+ 
+.parallax {
+    background: url(../img/bcg_slide-1.jpg) 50% 0;
+}
+ 
+.slidein {
+    background: #5b3030;
+}
+ 
+.slidein2 {
+    background: #304b5b;
+}
+ 
+.slidein2 .row {
+    justify-content: space-around;
+}
