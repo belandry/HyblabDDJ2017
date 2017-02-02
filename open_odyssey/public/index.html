@@ -44,8 +44,9 @@
 		<p>Here is some data from a json file : <span id="data"></span><p>
 
     <script>
-var names = ['Bellevue', 'Nantes métropole', 'Salicylic Acid', 'Fluoride', 'Zinc Oxide', 'Acetaminophen'];
-var data = [34, 19.2, 67, 93, 56, 100];
+var names = ['Bellevue Nantes Saint Herblain', 'Nantes métropole', 'Salicylic Acid'];
+//var names = $(document).ready(function(){}//)
+var data = [33, 19.3, 67];
 var dataSet = anychart.data.set(data);
 var palette = anychart.palettes.distinctColors().colors(['#64b5f6', '#1976d2', '#ef6c00', '#ffd54f', '#455a64', '#96a6a6', '#dd2c00', '#00838f', '#00bfa5', '#ffa000']);
 
@@ -99,8 +100,8 @@ anychart.onDocumentReady(function() {
     //makeBarWithBar(gauge, 10, 5, 17, true);
 
     gauge.title(true);
-    gauge.title().text('Medicine manufacturing progress' +
-'<br/><span style="color:#929292; font-size: 12px;">(ACME CORPORATION)</span>').useHtml(true);
+    gauge.title().text('Ménages composés de personnes seules à bas revenu' +
+'<br/><span style="color:#929292; font-size: 12px;"></span>').useHtml(true);
     gauge.title()
 .hAlign('center')
 .padding(0)
@@ -113,7 +114,6 @@ anychart.onDocumentReady(function() {
 
     </script>
 </body>
-    </script>
 
     <!-- Notre pied de page -->
     <footer>
