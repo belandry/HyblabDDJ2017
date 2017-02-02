@@ -13,10 +13,18 @@ body {
     height: 100vh;
     color: white;
     text-align: center;
+
 }
 
 #slide1 {
     background-color: red;
+}
+
+.text {
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: 300%;
+  line-height: 200%;
 }
 
 .glyphicon.glyphicon-chevron-down {
