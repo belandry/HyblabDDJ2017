@@ -3,8 +3,6 @@
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
     font-weight: normal;
     font-style: normal;
-    /*src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
-    font-weight: bold;*/
 }
 
 @font-face {
@@ -19,15 +17,24 @@
     font-family: 'Sanchez';
     src: url('../fonts/Sanchez/Sanchezregular.otf');
     font-weight: normal;
-    /*src: url('../fonts/Sanchez/Sanchezregular-ita.otf');
-    font-weight: italic;*/
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Sanchez';
+    src: url('../fonts/Sanchez/Sanchezregular-ita.otf');
+    font-weight: normal;
+    font-style: italic;
+}
 
 * {
+<<<<<<< HEAD
     font-family: 'Montserrat';
     font-weight: normal;
     font-style: normal;
+=======
+    font-family: 'Montserrat', normal;
+>>>>>>> 9cbde79478e3a45c3add7b331946348cd6155176
 }
 
 body {
@@ -66,9 +73,6 @@ body {
 .text {
   bottom:-400px;
 }
-
-.rotate.triggeredCSS3    {transform : rotate(360deg); }
-
 
 .glyphicon.glyphicon-chevron-down {
     position: absolute;
