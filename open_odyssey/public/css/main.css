@@ -25,7 +25,11 @@
 
 
 * {
-    font-family: 'Sanchez';
+    font-family: 'Montserrat';
+}
+
+#p4seconde {
+  font-family: 'Sanchez'
 }
 
 body {
