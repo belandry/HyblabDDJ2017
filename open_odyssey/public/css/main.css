@@ -36,6 +36,7 @@ body {
 
 #slide7, #slide8, #slide9, #slide10, #slide11 {
     background-color: #62ed9d;
+
 }
 
 .glyphicon.glyphicon-chevron-down {
@@ -46,6 +47,7 @@ body {
     left:48%;
 }
 
+
 #set-height {
   display: block;
 }
@@ -54,4 +56,37 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+#slide1 {
+}
+
+#slide2 {
+}
+
+#slide3 {
+}
+
+#slide4 {
+}
+
+#slide5 {
+}
+
+#slide6 {
+}
+
+#slide7 {
+}
+
+#slide8 {
+}
+
+#slide9 {
+}
+
+#slide10 {
+}
+
+#slide11 {
 }
