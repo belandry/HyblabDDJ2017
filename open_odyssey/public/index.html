@@ -9,12 +9,15 @@
     <!-- Déclaration de la feuille de style du document-->
     <link rel="stylesheet" href="css/style.css">
 		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+		<!--script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script-->
+		<!--script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script-->
 		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/example.js" defer></script>
-    <script src="js/donut.js" defer></script>
-    <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+		<!--<script src="js/example.js" defer></script>-->
+   
+
+      
+ 
+    <!--script src= "https://cdn.zingchart.com/zingchart.min.js"></script-->
     <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
   </head>
@@ -22,7 +25,7 @@
     <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
     <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
     <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+    
 
     <!-- l'entête de la page: titre, barre de recherche -->
     <header>
@@ -34,8 +37,7 @@
     <p>Replace this content by your web app !</p>
 
 		<p>Here is some data from a json file : <span id="data"></span><p>
-
-    <div id="myChart"></div>
+    <script type="text/javascript" src="js/donut.js" defer></script>
 
     <!-- Notre pied de page -->
     <footer>
