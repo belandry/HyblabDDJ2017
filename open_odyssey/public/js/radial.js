@@ -94,6 +94,10 @@ anychart.onDocumentReady(function() {
           "plotarea":{
             "margin":"40"
           },
+          "title":{
+            "text":"Ménages composés de personnes seules à bas revenu",
+            "margin-top":"5%"
+          },
           "scale":{
             "sizeFactor":1
           },
@@ -110,7 +114,7 @@ anychart.onDocumentReady(function() {
             "animation":{
               "speed":1000,
               "effect":5,
-              "method":0
+              "method":6
             },
             "hoverState":{
               "visible":false
@@ -125,7 +129,7 @@ anychart.onDocumentReady(function() {
               "borderColor":"#B9121B",
               "text":"Bellevue Saint Herblain",
               "tooltip":{
-                  "x":365,    
+                  "x":300,    
                   "y":243,
                   "width":120,
                   "fontSize":19,
@@ -146,7 +150,7 @@ anychart.onDocumentReady(function() {
               "borderColor":"#1C7600",
               "text":"Nantes Métropole",
               "tooltip":{
-                  "x":365,    
+                  "x":325,    
                   "y":243,
                   "width":120,
                   "fontSize":19,
