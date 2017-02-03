@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+
 .slide {
     display: flex;
     justify-content: center;
@@ -13,18 +14,24 @@ body {
     height: 100vh;
     color: white;
     text-align: center;
+}
 
+.slide h1 { 
+  display: block;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  font-size: 300%;
+  line-height: 200%;
+}
+
+.slide h2 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #slide1 {
     background-color: blue;
-}
-
-.text {
-  margin-right: 25%;
-  margin-left: 25%;
-  font-size: 300%;
-  line-height: 200%;
 }
 
 .glyphicon.glyphicon-chevron-down {
@@ -39,7 +46,7 @@ body {
     background-color: black;
 }
 
-<<<<<<< HEAD
+
 #set-height {
   display: block;
 }
@@ -48,7 +55,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-=======
+}
+
 #slide3 {
     background-color: green;
 }
@@ -83,5 +91,4 @@ body {
 
 #slide11 {
     background-color: grey;
->>>>>>> 34b44ff2e302bddacba7eb999cdf6c23ea65ac5d
 }
