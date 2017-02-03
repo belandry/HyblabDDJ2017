@@ -48,13 +48,12 @@ body {
   display: block;
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 5%;
-  font-size: 300%;
+  margin-bottom: 2%;
+  font-size: 200%;
 }
 
-
 .section h2 {
-    font-size: 1.5em;
+    font-size: 150%;
     font-weight: bold;
 }
 
@@ -71,16 +70,12 @@ body {
     background-color: #62ed9d;
 } 
 
-.text {
-  bottom:-400px;
-}
-
-.glyphicon.glyphicon-chevron-down {
+#flèche {
     position: absolute;
-    bottom: 1px;
+    bottom: 3%;
     top: auto;
-    font-size: 200%;
     left:48%;
+    width: 2%;
 }
 
 
@@ -93,6 +88,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+#slide1 {
+
 }
 
 #slide1 h1 {
