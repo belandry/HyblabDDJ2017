@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+
 .slide {
     display: flex;
     justify-content: center;
@@ -13,18 +14,29 @@ body {
     height: 100vh;
     color: white;
     text-align: center;
-
 }
 
-#slide1 {
-    background-color: blue;
-}
-
-.text {
-  margin-right: 25%;
-  margin-left: 25%;
+.slide h1 { 
+  display: block;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
   font-size: 300%;
   line-height: 200%;
+}
+
+.slide h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
+    background-color: #ffd44a;
+}
+
+#slide7, #slide8, #slide9, #slide10, #slide11 {
+    background-color: #62ed9d;
+
 }
 
 .glyphicon.glyphicon-chevron-down {
@@ -35,9 +47,6 @@ body {
     left:48%;
 }
 
-#slide2 {
-    background-color: black;
-}
 
 #set-height {
   display: block;
@@ -48,39 +57,35 @@ body {
   left: 0;
   width: 100%;
 }
+#slide1 {
+}
+
+#slide2 {
+}
 
 #slide3 {
-    background-color: green;
 }
 
 #slide4 {
-    background-color: black;
 }
 
 #slide5 {
-    background-color: orange;
 }
 
 #slide6 {
-    background-color: grey;
 }
 
 #slide7 {
-    background-color: black;
 }
 
 #slide8 {
-    background-color: green;
 }
 
 #slide9 {
-    background-color: blue;
 }
 
 #slide10 {
-    background-color: orange;
 }
 
 #slide11 {
-    background-color: grey;
 }
