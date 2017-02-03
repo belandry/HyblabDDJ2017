@@ -1,13 +1,12 @@
-//var data = $.getJSON("data/dummy.json", function(data){};  
-
 var myConfig = {
   "type":"ring",
   "title":{
-    "text":"Bellevue,"
+    "text":"Bellevue, "
   },
   "subtitle":{
     "text":"quartier prioritaire le plus peuplée de l’agglomération nantaise",
-    "font-weight":"normal"
+    "font-weight":"normal",
+    "font-size":15
   },
   "plot":{
     "value-box":{
@@ -24,7 +23,13 @@ var myConfig = {
         }
       ]
     },
-    "tooltip":{
+      "animation": {
+      "delay": "80",
+      "effect": "4",
+      "method": "6",
+      "sequence": "1"
+    },
+      "tooltip":{
       "text":"%t: %v (%npv%)",
       "font-color":"black",
       "font-family":"Georgia",
@@ -41,7 +46,7 @@ var myConfig = {
     "slice":"50%",
     "border-width":1,
     "border-color":"#cccccc",
-    "line-style":"dotted"
+    "line-style":"solild"
   },
   "plotarea":{
     "margin-top":"12%"
