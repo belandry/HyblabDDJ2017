@@ -54,67 +54,67 @@ var myConfig = {
   "series":[
     {
       "values":[19424],
-      "background-color":"#cc0000",
+      "background-color":"#f64628",
       "text": "Bellevue Nantes St Herblain"
     },
     {
       "values":[4973],
-      "background-color":"#ff3300",
+      "background-color":"#1ed668",
       "text":"Dervaillières"
     },
     {
       "values":[3085],
-      "background-color":"#ff6600",
+      "background-color":"#9fd1fe",
       "text":"Malakoff"
     },
     {
       "values":[3932],
-      "background-color":"#ff9933",
+      "background-color":"#bc3c35",
       "text":"Breil Malville"
     },
     {
       "values":[11594],
-      "background-color":"#ffcc00",
+      "background-color":"#62ed9d",
       "text":"Quartier Nord"
     },
     {
       "values":[2179],
-      "background-color":"#ace600",
+      "background-color":"#666666",
       "text":"Port Boyer"
     },
     {
       "values":[5348],
-      "background-color":"#88cc00",
+      "background-color":"#49d5ca",
       "text":"Bottière pin sec"
     },
     {
       "values":[2498],
-      "background-color":"#339933",
+      "background-color":"#f1f1f1",
       "text":"Clos Toreau"
     },
     {
       "values":[4727],
-      "background-color":"#66ccff",
+      "background-color":"#edbf00",
       "text":"La Halveque"
     },
     {
       "values":[1843],
-      "background-color":"#3399ff",
+      "background-color":"#999999",
       "text":"Sillon de Bretagne"
     },
     {
       "values":[4035],
-      "background-color":"#0066ff",
+      "background-color":"#18857f",
       "text":"Château"
     },
     {
       "values":[2470],
-      "background-color":"#3333cc",
+      "background-color":"#cccccc",
       "text":"Plaisance"
     },
     {
       "values":[2664],
-      "background-color":"#6600ff",
+      "background-color":"#e7857b",
       "text":"Ranzay grand clos"
     }
   ]
