@@ -1,0 +1,85 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+
+}
+
+#slide1 {
+    background-color: blue;
+}
+
+.text {
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: 300%;
+  line-height: 200%;
+}
+
+.glyphicon.glyphicon-chevron-down {
+    position: absolute;
+    bottom: 1px;
+    top: auto;
+    font-size: 200%;
+    left:48%;
+}
+
+#slide2 {
+    background-color: black;
+}
+
+#set-height {
+  display: block;
+}
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#slide3 {
+    background-color: green;
+}
+
+#slide4 {
+    background-color: black;
+}
+
+#slide5 {
+    background-color: orange;
+}
+
+#slide6 {
+    background-color: grey;
+}
+
+#slide7 {
+    background-color: black;
+}
+
+#slide8 {
+    background-color: green;
+}
+
+#slide9 {
+    background-color: blue;
+}
+
+#slide10 {
+    background-color: orange;
+}
+
+#slide11 {
+    background-color: grey;
+}

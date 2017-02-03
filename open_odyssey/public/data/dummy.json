@@ -1,27 +1,90 @@
-{
-  "personne isolé":{
-  	"bellevue nantes Saint herblain" : 19.424,
-  	"Dervaillières": 4.973,
-  	"Malakoff": 3085,
-  	"Breil Malville": 3932,
-  	"Quartier Nord": 11.594,
-  	"Port Boyer": 2179,
-  	"Bottière pin sec": 5.348,
-  	"Clos Toreau": 2498,
-  	"La Halveque": 4727,
-  	"Sillon de Bretagne": 1843,
-  	"Château": 4035,
-  	"Plaisance": 2470,
-  	"Ranzay grand clos":2664,
-  	"Total des territoires prioritaires de Nantes métropole": 68771
 
-  },
-  "Revenu médian":{
-  	"Bellevue": 163,
-  	"Nantes métropole": 679
-  },
-  "Ménages composés de personne seules à bas revenu":{
-  	"Bellevue Nantes Saint Herblain": 0.33,
-  	"Nantes métropole": 0.192
-  }
+{  
+  "Personne isolé":
+    [
+      {
+        "nom": "Bellevue Nantes St Herblain",
+        "valeur": 19424
+      },
+      {
+        "nom": "Dervaillières",
+        "valeur": 4973
+      },
+      {
+        "nom": "Malakoff",
+        "valeur": 3085
+      },
+      {
+        "nom": "Breil Malville",
+        "valeur": 3932
+      },
+      {
+        "nom": "Quartier Nord",
+        "valeur": 11594
+      },
+      {
+        "nom": "Port Boyer",
+        "valeur": 2179
+      },
+      {
+        "nom": "Bottière pin sec",
+        "valeur": 5348
+      },
+      {
+        "nom": "Clos Toreau",
+        "valeur": 2498
+      },
+      {
+        "nom": "La Halveque",
+        "valeur": 4727
+      },
+      {
+        "nom": "Sillon de Bretagne",
+        "valeur": 1843
+      },
+      {
+        "nom": "Château",
+        "valeur": 4035
+      },
+      {
+        "nom": "Plaisance",
+        "valeur": 2470
+      },
+      {
+        "nom": "Ranzay grand clos",
+        "valeur": 2664
+      }
+    ],
+
+    "Revenu médian":
+    [
+      {
+        "nom": "Bellevue Nantes St Herblain 1er",
+        "valeur": 163
+      },
+      {
+        "nom": "Nantes Métropole 1er",
+        "valeur": 679
+      },
+      {
+        "nom": "Bellevue Nantes St Herblain",
+        "valeur": 1002
+      },
+      {
+        "nom": "Nantes Métropole",
+        "valeur": 1752
+      }
+    ],
+
+    "Ménages composés de personne seules à bas revenu":
+    [
+      {
+        "nom": "Bellevue Nantes St Herblain 1er",
+        "valeur": 0.33
+      },
+      {
+        "nom": "Nantes Métropole 1er",
+        "valeur": 0.192
+      }
+    ]
 }
