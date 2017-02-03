@@ -28,13 +28,9 @@
 }
 
 * {
-<<<<<<< HEAD
     font-family: 'Montserrat';
     font-weight: normal;
     font-style: normal;
-=======
-    font-family: 'Montserrat', normal;
->>>>>>> 9cbde79478e3a45c3add7b331946348cd6155176
 }
 
 body {
