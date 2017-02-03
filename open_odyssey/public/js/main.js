@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){
-            if (index === 2 && nextIndex===1) {
+            if (nextIndex===1) {
             $('#fp-nav').fadeOut(); // or toggle by class
         }
         },
