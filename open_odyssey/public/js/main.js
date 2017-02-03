@@ -57,8 +57,19 @@ $(document).ready(function() {
         lazyLoading: true,
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        onLeave: function(index, nextIndex, direction){
+            if (index === 2 && nextIndex===1) {
+            $('#fp-nav').fadeOut(); // or toggle by class
+        }
+        },
+        afterLoad: function(anchorLink, index){
+            if (index === 1) {
+            $('#fp-nav').hide(); // or toggle by class
+        }
+        else {
+            $('#fp-nav').fadeIn(); // or toggle by class
+        }
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},

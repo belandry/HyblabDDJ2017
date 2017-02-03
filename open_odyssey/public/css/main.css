@@ -58,6 +58,11 @@ body {
     font-weight: bold;
 }
 
+
+.fp-viewing-SECTION-SLIDE #fp-nav{
+   display:false
+}
+
 #slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
     background-color: #ffd44a;
 }
