@@ -1,31 +1,53 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    /*src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: bold;*/
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Sanchez';
+    src: url('../fonts/Sanchez/Sanchezregular.otf');
+    font-weight: normal;
+    /*src: url('../fonts/Sanchez/Sanchezregular-ita.otf');
+    font-weight: italic;*/
+}
+
+
 * {
-    font-family: sans-serif;
+    font-family: 'Sanchez';
 }
 
 body {
-    margin: 0;
+    margin:0;
 }
 
 
-.slide {
+.section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     color: white;
     text-align: center;
 }
 
-.slide h1 { 
+.section h1 { 
   display: block;
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 10%;
   font-size: 300%;
-  line-height: 200%;
 }
 
-.slide h2 {
+.section h2 {
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -36,8 +58,14 @@ body {
 
 #slide7, #slide8, #slide9, #slide10, #slide11 {
     background-color: #62ed9d;
+} 
 
+.text {
+  bottom:-400px;
 }
+
+.rotate.triggeredCSS3    {transform : rotate(360deg); }
+
 
 .glyphicon.glyphicon-chevron-down {
     position: absolute;
@@ -51,6 +79,7 @@ body {
 #set-height {
   display: block;
 }
+
 #v0 {
   position: fixed;
   top: 0;
