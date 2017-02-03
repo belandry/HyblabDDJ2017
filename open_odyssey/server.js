@@ -11,7 +11,7 @@ var app = express();
 var port = 8080;
 
 // Minimum routing: serve static content from the html directory
-app.use(express.static(path.join(__dirname, './')));
+app.use(express.static(path.join(__dirname, '/')));
 
 // You can then add whatever routing code you need
 
