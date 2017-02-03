@@ -14,10 +14,17 @@ header img{
 	height: auto;
 }
 
-html, body, #container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+
+
+
+
+#myChart2 {
+  display: flex;
+  position: center;
 }
+
+
+
+
+
 

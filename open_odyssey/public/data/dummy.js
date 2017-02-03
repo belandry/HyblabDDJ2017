@@ -1,5 +1,4 @@
-
-var myjson = {  
+var objet = {  
   "Personne isolé":
     [
       {
@@ -87,4 +86,4 @@ var myjson = {
         "valeur": 0.192
       }
     ]
-}
+};

@@ -1,11 +1,23 @@
-
+ /*//composés de personne seules à bas_revenu
+var textjson = {"menages":
+    [
+      {
+        "nom": "Bellevue Nantes St Herblain 1er",
+        "valeur": 0.33
+      },
+      {
+        "nom": "Nantes Métropole 1er",
+        "valeur": 0.192
+      }
+    ]
+};
 
 var names = ['Bellevue Nantes Saint Herblain', 'Nantes métropole'];
+//var datas = JSON.parse(textjson);
+console.log(textjson.menage[0].nom);
+//var names = [objet., 'Nantes métropole'];
 //var data1 = $.getJSON("data/dummy.json", function(data){};
 //console.log(data1["Personne isolé"][0].nom);
-$.getJSON( "test.js", function( json ) {
-  console.log( "JSON Data: " + json.users[ 3 ].name );
- });
 var data = [33, 19.3];
 var dataSet = anychart.data.set(data);
 var palette = anychart.palettes.distinctColors().colors(['#64b5f6', '#1976d2', '#ef6c00', '#ffd54f', '#455a64', '#96a6a6', '#dd2c00', '#00838f', '#00bfa5', '#ffa000']);
@@ -69,4 +81,158 @@ anychart.onDocumentReady(function() {
 
     gauge.container('container');
     gauge.draw();
-});
+});*/
+
+
+
+    var myConfig = {
+      "graphset":[
+        
+        {
+          "type":"pie",
+          "backgroundColor": "#FFFFFF",
+          "plotarea":{
+            "margin":"40"
+          },
+          "scale":{
+            "sizeFactor":1
+          },
+          "plot":{
+            "valueBox":{
+              "visible":false,
+              "placement":"center"
+            },
+            "refAngle":270,
+            "angleStart":270,
+            "detach":false,
+            "slice":"100%",
+            "totals":[100],
+            "animation":{
+              "speed":1000,
+              "effect":5,
+              "method":0
+            },
+            "hoverState":{
+              "visible":false
+            }
+          },
+          "series":[
+            {
+              "size":"100%",
+              "values":[33],
+              "backgroundColor":"#B9121B",
+              "borderWidth":46,
+              "borderColor":"#B9121B",
+              "text":"Bellevue Saint Herblain",
+              "tooltip":{
+                  "x":365,    
+                  "y":243,
+                  "width":120,
+                  "fontSize":19,
+                  "padding":30,
+                  "anchor":"c",
+                  "fontFamily":"Lucida Sans Unicode",
+                  "text":"<span style='color:%color'>%plot-text</span><br><span style='font-size:31px;font-weight:bold;color:%color;'>%node-percent-value%</span>", 
+                  "align":"left",
+                  "borderWidth":0,
+                  "backgroundColor":"none",
+                }
+            },
+            {
+              "size":"75%",
+              "values":[19.2],
+              "backgroundColor":"#1C7600",
+              "borderWidth":46,
+              "borderColor":"#1C7600",
+              "text":"Nantes Métropole",
+              "tooltip":{
+                  "x":365,    
+                  "y":243,
+                  "width":120,
+                  "fontSize":19,
+                  "padding":30,
+                  "anchor":"c",
+                  "fontFamily":"Lucida Sans Unicode",
+                  "text":"<span style='color:%color'>%plot-text</span><br><span style='font-size:31px;font-weight:bold;color:%color;'>%node-percent-value%</span>",
+                  "align":"left",
+                  "borderWidth":0,
+                  "backgroundColor":"none",
+                }
+            }
+            
+          ],
+          "shapes":[
+          {
+                "type":"pie",
+              "flat":true,
+              "x":362,
+              "y":250,
+              "backgroundColor":"#B5121B",
+              "alpha":0.25,
+              "size":234,
+              "slice":187,
+              "placement":"bottom"
+
+          },
+            {
+              "type":"pie", //green done
+              "flat":true,
+              "x":362,
+              "y":250,
+              "backgroundColor":"#1C3600",
+              "alpha":0.25,
+              "size":182,
+              "slice":134,
+              "placement":"bottom"
+            },
+    
+            {
+              "type":"line",
+              "lineWidth":3,
+              "lineCap":"round",
+              "lineColor":"#000",
+              "points":[
+                [0,0],
+                [22,0],
+                null,
+                [10,-10],
+                [22,0],
+                [10,10]
+              ],
+              "offsetX":350,
+              "offsetY":42
+            },
+            {
+              "type":"line",
+              "lineWidth":3,
+              "lineCap":"round",
+              "lineColor":"#000",
+              "points":[
+                [0,0],
+                [22,0],
+                null,
+                [10,-10],
+                [22,0],
+                [10,10],
+                null,
+                [20,-10],
+                [32,0],
+                [20,10]
+              ],
+              "offsetX":350,
+              "offsetY":95
+            }
+          ]
+        }
+      ]
+    };
+     
+    zingchart.render({ 
+        id : 'myChart2', 
+        data : myConfig, 
+        height: 500, 
+        width: 725 
+    });
+
+
+
