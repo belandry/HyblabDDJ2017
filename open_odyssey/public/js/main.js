@@ -3,13 +3,9 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
-        navigation: false,
+        anchors:['accueil', 'bellevue', 'quartier-bellevue', 'environnements-solidaires'],
+        navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,
