@@ -1,145 +1,5 @@
-var myConfig = {
-  type: "hbar",
-  title: {
-    text: "Une grande précarité",
-    fontColor: "#555",
-    fontSize: 30,
-    fontFamily: "Roboto",
-    fontWeight: 'normal',
-    offsetX: 10
-  },
-    subtitle: {
-    offsetY: 15,
-    text: "Comparaison des revenues entre Bellevue et Nantes",
-    fontFamily: "Roboto",
-    fontSize: 16,
-    fontColor: "#777",
-    offsetX: 10
-  },
-  tooltip:{
-    padding: 10,
-    fontSize: 14,
-    text: "%v€ ",
-    backgroundColor: "#fff",
-    fontColor: "#444",
-    borderRadius: "5px",
-    borderColor: "#333",
-    borderWidth: 1
-  },
- 
-  legend: {
-    backgroundColor: "transparent",
-    borderWidth: "0px",
-    highlightPlot: true,
-    item: {
-      fontSize: 18,
-      fontColor: "#666",
-      fontFamily: "Roboto",
-      
-    },
-    marker:{
-
-      borderRadius: 10,
-      borderWidth: "0px",
-    },
-    cursor: "hand"
-  },
-  plotarea:{//margin:'dynamic'
-  margin: "100 130 70 100"
-  
-},
-  plot:{
-    borderRadius: "0 5 5 0",
-    hightlightMarker: {
-      backgroundColor:"red"
-    },
-    highlightState: {
-      backgroundColor:"red"
-    },
-     animation:{
-      effect: 4,
-      method: 0,
-      sequence: 1
-    }
-  },
-  source: {
-    text: "Source: Insee, RP 2012",
-    fontColor: "#666",
-    fontFamily: 'Roboto'
-  },
-  scaleX: {
-    labels: ['Premier Décile','Revenue Médian'],
-    item: {
-      fontFamily: "Roboto",
-      fontSize: 14
-    },
-    lineColor: "#DDD",
-    tick:{
-      visible: false
-    }
-  },
-  scaleY: {
-    label:{
-      offsetY: 5,
-      text: "Revenue (en €)",
-      fontColor: "#777",
-      fontSize: 14,
-      fontFamily: "Roboto",
-    },
-    item: {
-      // fontColor: "#fff",
-      fontFamily: "Roboto",
-      fontSize: 14
-    },
-    lineWidth: 0,
-    tick: {
-      visible: false
-    },
-    guide:{
-      lineStyle: "solid",
-      lineColor: "#DDD"
-    },
-    values: "0:2000:50"
-  },
-  series : [
-    {
-      text: "Bellevue",
-      // values: [4820, 8067, 12000, 12100, 12282, 12540],
-      values: [163,1002],
-      backgroundColor: "#C0392B",
-      rules: [
-        { rule: '%i==0', backgroundColor: '#C0392B'},
-        { rule: '%i==1', backgroundColor: '#C0392B'},
-     
-      ]
-    },
- 
-    {
-      text: "Nantes",
-      // values: [2670, 6041, 11400, 11500,9832, 9275],
-      values: [679, 1769],
-      backgroundColor: "#2471A3",
-      rules: [
-        { rule: '%i==0', backgroundColor: '#2471A3'},
-        { rule: '%i==1', backgroundColor: '#2471A3'},
-        
-      ]
-    },
-    
-  ]
-};
- 
-zingchart.render({ 
-  id : 'myChart', 
-  data : myConfig, 
-  height: 500, 
-  width: 725 
-});
-
-
-
-
-/*  return {
+function createLabel(text, plot, index) {
+  return {
     "text": text,
     //"background-color": "#90A23B",
     "font-size": "14px",
@@ -157,9 +17,10 @@ zingchart.render({
  
 var myConfig = {
   "type": "hbar", 
-    // fond 
+  "background-color": "#898d95 #4f4f4f",   // fond 
  "title": {
                 "text": "Revenue ",
+                "align":"left",
                 
                 "background-color": "#f7f7f7 #e3e3e9",
                 "font-family": "Passion One",
@@ -172,8 +33,8 @@ var myConfig = {
  
  
  labels : [
-    createLabel('Bellevue', 0,0),
-    createLabel('Nantes', 0,1),
+    createLabel('Premier Décile', 0,0),
+    createLabel('Revenue Médian', 0,1),
     
   ],
   plot: {
@@ -196,7 +57,8 @@ var myConfig = {
       delay: 600
     }
   },
-  plotarea:{margin:'dynamic'
+  plotarea:{margin:'dynamic',
+  "background-color": "#6c6e72"
 },
   tooltip:{
     text:'%v€',
@@ -218,8 +80,8 @@ var myConfig = {
   },
    "scale-y": {
                 "values": [
-                    "Bellevue",
-                    "Nantes",
+                    "Premier Décile",
+                    "Revenue Médian",
                    
                 ],
      "item": {
@@ -274,7 +136,7 @@ var myConfig = {
             },
    "legend": {
                 "layout": "h",
-                "background-color": "#6c6e72",
+                "background-color": "none",
                 "border-width": 0,
                 "shadow": 0,
                 "y": "46px",
@@ -289,14 +151,14 @@ var myConfig = {
             },
    "series":[
       {
-          "text" : "Premier Décile",
+          "text" : "Bellevue",
           "values":[163,1002],
           "background-color": "#a50617",
           "background-fit": "xy"
         },
 
         {
-          "text" : "Revenue Médian",
+          "text" : "Nantes",
           "values" : [679,1769],
           "background-fit": "xy"
         
@@ -311,4 +173,3 @@ zingchart.render({
   height: "100%", 
   width: "100%" 
 });
-*/
