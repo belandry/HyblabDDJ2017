@@ -22,4 +22,9 @@ fetch('data/dummy.json')
     .then(function (json) {
         document.querySelector('#data')
             .textContent = json.data;
+<<<<<<< HEAD
     });
+=======
+    });
+
+>>>>>>> origin/Jean

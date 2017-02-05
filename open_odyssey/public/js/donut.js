@@ -1,11 +1,12 @@
 var myConfig = {
   "type":"ring",
   "title":{
-    "text":"Value Boxes"
+    "text":"Bellevue, "
   },
   "subtitle":{
-    "text":"with placement set to 'center' to show the total pie value",
-    "font-weight":"normal"
+    "text":"quartier prioritaire le plus peuplée de l’agglomération nantaise",
+    "font-weight":"normal",
+    "font-size":15
   },
   "plot":{
     "value-box":{
@@ -22,7 +23,13 @@ var myConfig = {
         }
       ]
     },
-    "tooltip":{
+      "animation": {
+      "delay": "80",
+      "effect": "4",
+      "method": "6",
+      "sequence": "1"
+    },
+      "tooltip":{
       "text":"%t: %v (%npv%)",
       "font-color":"black",
       "font-family":"Georgia",
@@ -39,86 +46,76 @@ var myConfig = {
     "slice":"50%",
     "border-width":1,
     "border-color":"#cccccc",
-    "line-style":"dotted"
+    "line-style":"solild"
   },
   "plotarea":{
     "margin-top":"12%"
   },
   "series":[
     {
-      "values":[234],
-      "background-color":"#cc0000",
-      "text":"Alpha"
+      "values":[19424],
+      "background-color":"#f64628",
+      "text": "Bellevue Nantes St Herblain"
     },
     {
-      "values":[121],
-      "background-color":"#ff3300",
-      "text":"Beta"
+      "values":[4973],
+      "background-color":"#1ed668",
+      "text":"Dervaillières"
     },
     {
-      "values":[77],
-      "background-color":"#ff6600",
-      "text":"Gamma"
+      "values":[3085],
+      "background-color":"#9fd1fe",
+      "text":"Malakoff"
     },
     {
-      "values":[65],
-      "background-color":"#ff9933",
-      "text":"Delta"
+      "values":[3932],
+      "background-color":"#bc3c35",
+      "text":"Breil Malville"
     },
     {
-      "values":[59],
-      "background-color":"#ffcc00",
-      "text":"Epsilon"
+      "values":[11594],
+      "background-color":"#62ed9d",
+      "text":"Quartier Nord"
     },
     {
-      "values":[35],
-      "background-color":"#ace600",
-      "text":"Zeta"
+      "values":[2179],
+      "background-color":"#666666",
+      "text":"Port Boyer"
     },
     {
-      "values":[34],
-      "background-color":"#88cc00",
-      "text":"Eta"
+      "values":[5348],
+      "background-color":"#49d5ca",
+      "text":"Bottière pin sec"
     },
     {
-      "values":[31],
-      "background-color":"#339933",
-      "text":"Theta"
+      "values":[2498],
+      "background-color":"#f1f1f1",
+      "text":"Clos Toreau"
     },
     {
-      "values":[16],
-      "background-color":"#66ccff",
-      "text":"Iota"
+      "values":[4727],
+      "background-color":"#edbf00",
+      "text":"La Halveque"
     },
     {
-      "values":[14],
-      "background-color":"#3399ff",
-      "text":"Kappa"
+      "values":[1843],
+      "background-color":"#999999",
+      "text":"Sillon de Bretagne"
     },
     {
-      "values":[13],
-      "background-color":"#0066ff",
-      "text":"Lambda"
+      "values":[4035],
+      "background-color":"#18857f",
+      "text":"Château"
     },
     {
-      "values":[12],
-      "background-color":"#3333cc",
-      "text":"Mu"
+      "values":[2470],
+      "background-color":"#cccccc",
+      "text":"Plaisance"
     },
     {
-      "values":[11],
-      "background-color":"#6600ff",
-      "text":"Nu"
-    },
-    {
-      "values":[10],
-      "background-color":"#9933ff",
-      "text":"Xi"
-    },
-    {
-      "values":[9],
-      "background-color":"#9999ff",
-      "text":"Omicron"
+      "values":[2664],
+      "background-color":"#e7857b",
+      "text":"Ranzay grand clos"
     }
   ]
 };

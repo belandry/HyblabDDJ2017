@@ -1,11 +1,15 @@
 {
   "name": "open_odyssey",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Projet hyblab DDJ 2017",
   "main": "server.js",
   "repository": "",
   "author": "",
   "dependencies": {
+    "micro": "latest",
     "express": "^4.13.3"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
