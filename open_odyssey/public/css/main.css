@@ -43,10 +43,6 @@ p {
     background: #fff;
 }
 
-#p4seconde {
-  font-family: 'Sanchez'
-}
-
 
 #video{
     position: absolute;
@@ -93,26 +89,27 @@ body {
 
 #slide7, #slide8, #slide9, #slide10, #slide11 {
     background-color: #62ed9d;
-} 
+}
 
-#flèche {
+
+/* SLIDE 1*/
+#slide1 h1 {
+  animation: anim_apparition 1.5s linear forwards 0s;
+  text-transform : uppercase;
+}
+
+#slide1 h2 {
+  opacity:0;
+  animation: anim_apparition 1.5s linear forwards 1s;
+  text-transform : uppercase;
+}
+
+#fleche {
     position: absolute;
     bottom: 3%;
     top: auto;
     left:48%;
     width: 2%;
-}
-
-
-#set-height {
-  display: block;
-}
-
-#v0 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .gros {
@@ -122,35 +119,8 @@ body {
   color: #e7857b;
 }
 
-#slide1 {
-
-}
-
-#slide1 h1 {
-  animation: anim 1.5s linear forwards 0s;
-  text-transform : uppercase;
-}
-
-#slide1 h2 {
-  opacity:0;
-  animation: anim 1.5s linear forwards 1s;
-  text-transform : uppercase;
-}
-
-@keyframes anim {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-
-@keyframes dezoom {
-  from {
-    /*margin-top: 50%;*/
-    /*font-size: 150%;*/
-  }
-
-  to {
-    font-size: 60%;
-  }
+#text_slide4 {
+  font-family: 'Sanchez'
 }
 
 #slide2 {
@@ -164,7 +134,7 @@ body {
 
 #apparition {
   opacity:0;
-  animation: anim 5.5s linear forwards 5.5s;
+  animation: anim_apparition 5.5s linear forwards 5.5s;
 }
 
 #slide4 {
@@ -227,4 +197,23 @@ body {
 }
 
 #slide11 {
+}
+
+
+/** ANIMATIONS **/
+
+@keyframes apparition {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+@keyframes dezoom {
+  from {
+    /*margin-top: 50%;*/
+    /*font-size: 150%;*/
+  }
+
+  to {
+    font-size: 60%;
+  }
 }
