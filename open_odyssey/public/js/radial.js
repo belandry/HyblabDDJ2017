@@ -90,13 +90,9 @@ anychart.onDocumentReady(function() {
         
         {
           "type":"pie",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#62ed9d",
           "plotarea":{
             "margin":"40"
-          },
-          "title":{
-            "text":"Ménages composés de personnes seules à bas revenu",
-            "margin-top":"5%"
           },
           "scale":{
             "sizeFactor":1
@@ -124,7 +120,7 @@ anychart.onDocumentReady(function() {
             {
               "size":"100%",
               "values":[33],
-              "backgroundColor":"#B9121B",
+              "backgroundColor":"#62ed9d",
               "borderWidth":46,
               "borderColor":"#B9121B",
               "text":"Bellevue Saint Herblain",
