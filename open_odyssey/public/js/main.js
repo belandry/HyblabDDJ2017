@@ -57,18 +57,22 @@ $(document).ready(function() {
         lazyLoading: true,
 
         //events
-        onLeave: function(index, nextIndex, direction){
-            if (nextIndex===1) {
-            $('#fp-nav').fadeOut(); // or toggle by class
-        }
+        onLeave: function(index, nextIndex, direction)
+        {
+            if (nextIndex===1)
+            {
+                $('#fp-nav').fadeOut();
+            }
         },
-        afterLoad: function(anchorLink, index){
-            if (index === 1) {
-            $('#fp-nav').hide(); // or toggle by class
-        }
-        else {
-            $('#fp-nav').fadeIn(); // or toggle by class
-        }
+        afterLoad: function(anchorLink, index)
+        {
+            if (index===1)
+            {
+                $('#fp-nav').hide();
+            else
+            {
+                $('#fp-nav').fadeIn();
+            }
         },
         afterRender: function(){},
         afterResize: function(){},
