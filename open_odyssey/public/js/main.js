@@ -57,12 +57,38 @@ $(document).ready(function() {
         lazyLoading: true,
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        onLeave: function(index, nextIndex, direction){
+            if (nextIndex===1) {
+            $('#fp-nav').fadeOut(); // or toggle by class
+        }
+        },
+        afterLoad: function(anchorLink, index){
+            if (index === 1) {
+            $('#fp-nav').hide(); // or toggle by class
+        }
+        else {
+            $('#fp-nav').fadeIn(); // or toggle by class
+        }
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+});
+
+var $window = $(window);
+var $div_concerné = $('#slide3');
+ 
+var scroll_max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+var wrapper_height = $('#wrapper').height();
+var wrapper_width = $('#wrapper').width();
+ 
+$window.scroll(function() {
+    console.log(scroll_max);
+         
+    $('#slide3').css("top", "+=300");
+    $('#slide3').css("left", "+=300");
+       
 });
