@@ -190,13 +190,16 @@ body {
 }
 #bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}
 
-
+.bleu{color: #18857f;}
 
 #slide6 {
 }
 
 #slide7 {
+
 }
+#img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
+
 
 #slide8 {
 }
