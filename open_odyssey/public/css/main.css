@@ -38,6 +38,11 @@ p {
   font-size: 125%;
 }
 
+/* Couleur menu droit */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
 #p4seconde {
   font-family: 'Sanchez'
 }
@@ -64,11 +69,6 @@ body {
 .section h2 {
     font-size: 150%;
     font-weight: bold;
-}
-
-
-.fp-viewing-SECTION-SLIDE #fp-nav{
-   display: false;
 }
 
 #slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
