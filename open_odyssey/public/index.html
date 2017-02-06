@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Notre page est en français -->
+  <head>
+    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
+    <meta charset="utf-8">
+    <title>Hyblab 2016</title>
+		<!-- Basic viewport setting for mobile friendly page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Déclaration de la feuille de style du document-->
+    <link rel="stylesheet" href="css/style.css">
+		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+		<!-- Simple sample script that loads data from a dummy json file -->
+		<script src="js/example.js" defer></script>
+
+    <script src="https://cdn.anychart.com/js/7.12.0/anychart-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.anychart.com/css/7.12.0/anychart-ui.min.css" />
+  <style>
+    html, body, #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  </head>
+  <body>
+    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
+    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
+    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
+    <div id="container">
+
+    <!-- l'entête de la page: titre, barre de recherche -->
+    <header>
+			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
+      <h1>Hyblab Datajournalism 2017</h1>
+    </header>
+
+    <!-- Le contenu du site -->
+    <p>Replace this content by your web app !</p>
+
+		<p>Here is some data from a json file : <span id="data"></span><p>
+
+    <script>
+var names = ['Bellevue', 'Nantes métropole', 'Salicylic Acid', 'Fluoride', 'Zinc Oxide', 'Acetaminophen'];
+var data = [34, 19.2, 67, 93, 56, 100];
+var dataSet = anychart.data.set(data);
+var palette = anychart.palettes.distinctColors().colors(['#64b5f6', '#1976d2', '#ef6c00', '#ffd54f', '#455a64', '#96a6a6', '#dd2c00', '#00838f', '#00bfa5', '#ffa000']);
+
+var makeBarWithBar = function(gauge, radius, i, width, without_stroke){
+    var stroke = '1 #e5e4e4';
+    if (without_stroke) {
+stroke = null;
+gauge.label(i)
+.text(names[i] + ', <span style="">' + data[i] + '%</span>')// color: #7c868e
+    .useHtml(true);
+gauge.label(i)
+    .hAlign('center')
+    .vAlign('middle')
+    .anchor('rightCenter')
+    .padding(0, 10)
+    .height(width/2 + '%')
+    .offsetY(radius + '%')
+    .offsetX(0);
+    }
+
+    gauge.bar(i).dataIndex(i).radius(radius).width(width).fill(palette.colorAt(i)).stroke(null).zIndex(5);
+    gauge.bar(i + 100).dataIndex(5).radius(radius).width(width).fill('#F5F4F4').stroke(stroke).zIndex(4);
+    return gauge.bar(i)
+};
+
+
+anychart.onDocumentReady(function() {
+    gauge = anychart.circularGauge();
+    gauge.data(dataSet);
+    gauge.fill('#fff')
+.stroke(null)
+.padding(0)
+.margin(100)
+.startAngle(0)
+.sweepAngle(270);
+    var axis = gauge.axis().radius(100).width(1).fill(null);
+    axis.scale()
+.minimum(0)
+.maximum(100)
+.ticks({interval: 1})
+.minorTicks({interval: 1});
+    axis.labels().enabled(false);
+    axis.ticks().enabled(false);
+    axis.minorTicks().enabled(false);
+    gauge.margin(50);
+    makeBarWithBar(gauge, 100, 0, 17, true);
+    makeBarWithBar(gauge, 80, 1, 17, true);
+   // makeBarWithBar(gauge, 60, 2, 17, true);
+    //makeBarWithBar(gauge, 40, 3, 17, true);
+    //makeBarWithBar(gauge, 20, 4, 17, true);
+    //makeBarWithBar(gauge, 10, 5, 17, true);
+
+    gauge.title(true);
+    gauge.title().text('Medicine manufacturing progress' +
+'<br/><span style="color:#929292; font-size: 12px;">(ACME CORPORATION)</span>').useHtml(true);
+    gauge.title()
+.hAlign('center')
+.padding(0)
+.margin([0, 0, 20, 0]);
+
+    gauge.container('container');
+    gauge.draw();
+});
+
+
+    </script>
+</body>
+    </script>
+
+    <!-- Notre pied de page -->
+    <footer>
+      <p>Copyright Hyblab team 2017</p>
+    </footer>
+    </div>
+  </body>
+</html>
