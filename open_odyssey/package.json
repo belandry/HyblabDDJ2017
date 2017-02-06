@@ -6,8 +6,9 @@
   "repository": "",
   "author": "",
   "dependencies": {
-    "micro": "latest",
-    "express": "^4.13.3"
+    "aos": "^2.1.1",
+    "express": "^4.13.3",
+    "micro": "latest"
   },
   "scripts": {
     "start": "node server.js"
