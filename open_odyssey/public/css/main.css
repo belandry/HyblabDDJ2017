@@ -43,6 +43,14 @@
 }
 
 /* Tailles,couleurs ... des caractères */
+#op{
+   
+    width: 40%;
+    height : 38%;
+    bottom: 10%
+    
+
+}
 .text_big {
   font-size: 175%;
 }
@@ -90,7 +98,10 @@
     color: white;
     text-align: center;
 }
-
+.important {
+  color: #e7857b;
+  border-color: #e7857b;
+}
 .section h1 { 
   display: block;
   margin-right: 10%;
@@ -185,6 +196,12 @@
 
 
 /** SLIDE 6 **/
+#slide6 #t2{  
+  top : -15%;
+  
+  text-transform: uppercase;
+}
+
 
 #bloc1 {position: absolute; top:25%; left: 5%;}
 #bloc2 {position: absolute; top:30%; left: 15%;}
