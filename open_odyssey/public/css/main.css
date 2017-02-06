@@ -1,3 +1,18 @@
+/** GLOBAL **/
+
+* {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Couleur menu droit */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+/* Polices */
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
@@ -27,43 +42,44 @@
     font-style: italic;
 }
 
-* {
-  font-family: 'Montserrat';
-  font-weight: normal;
-  font-style: normal;
-
+/* Tailles,couleurs ... des caractères */
+.text_big {
+  font-size: 175%;
 }
 
-p {
-  font-size: 125%;
+.text_huge {
+  font-size: 400%;
 }
 
-/* Couleur menu droit */
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-    background: #fff;
+.text_important {
+  color: #e7857b;
+}
+
+.text_bleu {
+  color: #18857f;
 }
 
 
-#video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: #ffd44a; 
-    background-position: center center;
-    background-size: contain;
-    z-index:3;
+/** ANIMATIONS **/
+
+@keyframes apparition {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+@keyframes dezoom {
+  from {
+    /*margin-top: 50%;*/
+    /*font-size: 150%;*/
   }
 
-body {
-    margin:0;
+  to {
+    font-size: 60%;
+  }
 }
 
 
+/** CONFIG SLIDES **/
 .section {
     display: flex;
     color: white;
@@ -92,15 +108,15 @@ body {
 }
 
 
-/* SLIDE 1*/
+/** SLIDE 1 **/
 #slide1 h1 {
-  animation: anim_apparition 1.5s linear forwards 0s;
+  animation: apparition 1.5s linear forwards 0s;
   text-transform : uppercase;
 }
 
 #slide1 h2 {
   opacity:0;
-  animation: anim_apparition 1.5s linear forwards 1s;
+  animation: apparition 1.5s linear forwards 1s;
   text-transform : uppercase;
 }
 
@@ -112,34 +128,48 @@ body {
     width: 2%;
 }
 
-.gros {
-  font-size: 175%;
-}
-.important {
-  color: #e7857b;
-}
 
-#text_slide4 {
-  font-family: 'Sanchez'
-}
+/** SLIDE 2 **/
 
-#slide2 {
-}
+#video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: #ffd44a; 
+    background-position: center center;
+    background-size: contain;
+    z-index:3;
+  }
+
+
+/** SLIDE 3 **/
 
 #slide3 {
-  font-size: 100%;
+  font-size: 125%;
   text-transform : uppercase;
   animation: dezoom 2.5s linear forwards 5s;
 }
 
 #apparition {
   opacity:0;
-  animation: anim_apparition 5.5s linear forwards 5.5s;
+  animation: apparition 5.5s linear forwards 5.5s;
 }
+
+
+/** SLIDE 4 **/
 
 #slide4 {
-
+  font-size: 125%;
+  font-family: 'Sanchez'
 }
+
+
+/** SLIDE 5 **/
 
 #slide5 h1{
   text-transform: uppercase;
@@ -149,7 +179,9 @@ body {
   left: 1%;
 }
 
-.big{font-size: 400%;}
+
+/** SLIDE 6 **/
+
 #bloc1 {position: absolute; top:25%; left: 5%;}
 #bloc2 {position: absolute; top:30%; left: 15%;}
 #num6 {position: absolute; top:20%; right: 35%;}
@@ -176,44 +208,7 @@ body {
 }
 #bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}
 
-.bleu{color: #18857f;}
 
-#slide6 {
-}
+/** SLIDE 7 **/
 
-#slide7 {
-
-}
 #img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
-
-
-#slide8 {
-}
-
-#slide9 {
-}
-
-#slide10 {
-}
-
-#slide11 {
-}
-
-
-/** ANIMATIONS **/
-
-@keyframes apparition {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-
-@keyframes dezoom {
-  from {
-    /*margin-top: 50%;*/
-    /*font-size: 150%;*/
-  }
-
-  to {
-    font-size: 60%;
-  }
-}
