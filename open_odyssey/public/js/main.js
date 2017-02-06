@@ -63,12 +63,15 @@ $(document).ready(function() {
             {
                 $('#fp-nav').fadeOut();
             }
+
+            
         },
         afterLoad: function(anchorLink, index)
         {
             if (index===1)
             {
                 $('#fp-nav').hide();
+                $("#text_slide3").removeClass('dezoom');
             }
             else
             {
@@ -77,7 +80,7 @@ $(document).ready(function() {
 
             if (index===3)
             {
-
+                $("#text_slide3").addClass('dezoom');
             }
         },
         afterRender: function(){},
