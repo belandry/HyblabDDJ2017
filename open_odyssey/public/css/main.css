@@ -71,6 +71,13 @@
    100% {opacity:0;}
 }
 
+@keyframes dezoom {
+   to {
+    font-size: 100%;
+    top:15%
+  }
+}
+
 @keyframes disparition_ville1_slide3 {
    to {
     bottom: 100%;
@@ -87,8 +94,8 @@
   animation: dezoom 1.5s linear forwards 3s;
 }
 
-.apparition_text_slide3 {
-  animation: apparition_text_slide3 1.5s linear forwards 4s;
+.apparition_titre_slide3 {
+  animation: apparition 1.5s linear forwards 4s;
 }
 
 .apparition_ville1_slide3 {
@@ -96,11 +103,11 @@
 }
 
 .disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 8s;
+  animation: disparition 1.5s linear forwards 2s;
 }
 
 .disparition_ville1_slide3 {
-  animation: disparition_ville1_slide3 2s linear forwards 8s;
+  animation: disparition_ville1_slide3 5s linear forwards 3s;
 }
 
 
@@ -177,7 +184,7 @@
 
 /** SLIDE 3 **/
 
-#text_slide3 {
+#text_slide3_app {
   position: absolute;
   font-size: 125%;
   left:0;
@@ -189,13 +196,13 @@
 
 #titre_slide3 {
   position: absolute;
-  font-size: 145%;
+  font-size: 200%;
   left:12%;
   top:45%;
   opacity:0;
 }
 
-#ville1_side3 {
+#ville1_slide3 {
     position: absolute;
     bottom: -120%;
     right: -10%;

@@ -84,12 +84,23 @@ $(document).ready(function() {
 
             if (index===3)
             {
-                $("#text_slide3").addClass('dezoom');
-                $("#titre_slide3").addClass('apparition_text_slide3');
-                $("#ville1_side3").addClass('apparition_ville1_slide3');
-                $("#text_slide3").addClass('disparition_text_slide3');
+                $("#text_slide3_app").addClass('dezoom');
+                $("#titre_slide3").addClass('apparition_titre_slide3');
+
+                $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+                    function(e) {
+                        var myElement = document.querySelector("#ville1_slide3");
+                        myElement.style.bottom="-50%";
+                        $("#ville1_slide3").addClass('disparition_ville1_slide3');
+                    })
+
+                $("#ville1_slide3").addClass('apparition_ville1_slide3');
+                
+                $("#text_slide3_disp").addClass('disparition_text_slide3');
+                
+                /*$("#text_slide3").addClass('disparition_text_slide3');
                 $("#titre_slide3").addClass('disparition_text_slide3');
-                $("#ville1_side3").addClass('disparition_ville1_slide3');
+                $("#ville1_side3").addClass('disparition_ville1_slide3');*/
             }
         },
         afterRender: function(){},
