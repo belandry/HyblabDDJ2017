@@ -61,18 +61,19 @@
 
 /** ANIMATIONS **/
 
-@keyframes apparition_text_slide3 {
+@keyframes apparition {
    0%  {opacity:0;}
    100% {opacity:1;}
 }
 
-@keyframes dezoom {
-  to {
-    font-size: 90%;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    right: 0;
+@keyframes disparition {
+   0%  {opacity:1;}
+   100% {opacity:0;}
+}
+
+@keyframes disparition_ville1_slide3 {
+   to {
+    bottom: 100%;
   }
 }
 
@@ -92,6 +93,14 @@
 
 .apparition_ville1_slide3 {
   animation: apparition_ville1_slide3 1.5s linear forwards 5s;
+}
+
+.disparition_text_slide3 {
+  animation: disparition 1.5s linear forwards 8s;
+}
+
+.disparition_ville1_slide3 {
+  animation: disparition_ville1_slide3 2s linear forwards 8s;
 }
 
 
@@ -189,7 +198,7 @@
 #ville1_side3 {
     position: absolute;
     bottom: -120%;
-    right: -15%;
+    right: -10%;
     width: 120%;
     height: 120%;
 }
