@@ -192,15 +192,103 @@
 #slide5 h1{
   text-transform: uppercase;
   font-size: 150%;
-  position: absolute;
-  top: 10%;
-  left: 1%;
 }
 
+#slide5{
+  height: 100%;
+}
 
-/** SLIDE 6 **/
+#partie_gauche{
+  display: inline-block;
+  width: 45%;
+  /*margin-top: 30%;*/
+}
 
-#bloc1 {position: absolute; top:25%; left: 5%;}
+#partie_droite{
+  display: inline-block;
+  height: 80%;
+  width: 49%;
+  /*margin-top: -20%*/;
+}
+
+#titre_gauche{position: absolute; bottom: 80%; left: 10%;}
+/*#bloc_texte{position: absolute; bottom: 65%; left: 10%;}*/
+#b1{position: absolute; bottom: 65%; left: 5%;}
+#b2{position: absolute; bottom: 65%; left: 15%; font-size: 120%;}
+/*#image_gauche{position: absolute; bottom: 50%; left: 10%;}*/
+#img_micro {position: absolute; bottom: 25%; left: 25%; width: 30%; height: 30%;}
+#img_lave_linge {position: absolute; bottom: 25%; left: 15%; width: 30%; height: 35%;}
+#img_commode {position: absolute; bottom: 25%; left: 3%; width: 30%; height: 40%;}
+#img_grille_pain {position: absolute; bottom: 25%; left: -9%; width: 30%; height: 30%;}
+#img_ligne {position: absolute; bottom: 20%; left: 0%; width: 50%;}
+#tonnes{position: absolute; bottom: 5%; left: 5%; font-size: 200%;}
+/*#bloc4{position: absolute; bottom: 5%; left: 20%; font-size: 150%;}*/
+#text1{position: absolute; bottom: 10%; left: 20%; font-size: 150%;}
+#text2{position: absolute; bottom: 10%; left: 30%; font-size: 150%;}
+#text3{position: absolute; bottom: 5%; left: 20%; font-size: 150%;}
+#text4{position: absolute; bottom: 5%; left: 30%; font-size: 150%;}
+
+
+#titre_droite{position: absolute; bottom: 70%; right: 40%;}
+#bloc3{display: inline-block; width: 45%; font-size: 150%;}
+#num6{display: inline-block; width: 45%;font-size: 600%}
+
+#habitat1{position: absolute; bottom: 65%; right: 30%;}
+#habitat2{position: absolute; bottom: 58.5%; right: 30%;}
+#habitat3{position: absolute; bottom: 52%; right: 30%;}
+#habitat5{position: absolute; bottom: 45.5%; right: 30%;}
+#habitat4{position: absolute; bottom: 39%; right: 30%;}
+#habitat6{position: absolute; bottom: 33.5%; right: 30%; }
+
+#ligne1{position: absolute; bottom: 65%; right: 25%; width: 5%;}
+#ligne2{position: absolute; bottom: 58.5%; right: 25%; width: 5%;}
+#ligne3{position: absolute; bottom: 52%; right: 25%; width: 5%;}
+#ligne4{position: absolute; bottom: 45.5%; right: 25%; width: 5%;}
+#ligne5{position: absolute; bottom: 39%; right: 25%; width: 5%;}
+#ligne6{position: absolute; bottom: 33.5%; right: 25%; width: 5%;}
+
+#bloc1 {}
+#bloc2 {}
+#num6 {}
+#image_gauche{}
+#micro-onde{display: inline-block; width: 23%;}
+#lave{display: inline-block; width: 23%;}
+#commode{display: inline-block; width: 23%;}
+#grille_pain{display: inline-block; width: 23%;}
+
+#b_gauche{display: inline-block; width: 35%;}
+#traits{display: inline-block; width: 10%;}
+#image_bailleur{display: inline-block; width: 20%;}
+#dates{display: inline-block;width: 15%;}
+
+#img_bloc1 {position: absolute; bottom: 23%; right: 11.5%; width: 16.5%; margin-top:-30%;}
+#img_bloc2 {position: absolute; bottom: 30.5%; right: 15%; width: 10%; margin-top:-30%;}
+#img_bloc3 {position: absolute; bottom: 36%; right: 15%; width: 10%;margin-top:-30%;}
+#img_bloc4 {position: absolute; bottom: 42.5%; right: 15%; width: 10%; margin-top:-30%;}
+#img_bloc5 {position: absolute; bottom: 49%; right: 15%; width: 10%; margin-top:-30%;}
+#img_bloc6 {position: absolute; bottom: 55.5%; right: 15%; width: 10%; margin-top:-30%;}
+#img_bloc7 {position: absolute; bottom: 62%; right: 15%; width: 10%; margin-top:-30%;}
+#img_bloc8 {position: absolute; bottom: 68.5%; right: 15%; width: 10%; margin-top:-30%;}
+
+#img_2016 {position: absolute; bottom: 68.5%; right: 7.5%; width: 5%; }
+#img_2015 {position: absolute; bottom: 49%; right: 7.5%; width: 5%; }
+#img_2012 {position: absolute; bottom: 35%; right: 7.5%; width: 5%; }
+
+#date2016, #date2015, #date2012{
+  /*margin-bottom: 70%;*/
+}
+/*#img_micro {width: 30%; height: 30%;}
+#img_lave_linge {width: 35%; height: 35%;}
+#img_commode {width: 35%; height: 40%;}
+#img_grille_pain {width: 35%; height: 30%;}
+#img_ligne {width: 35%; height: 30%;}*/
+#tonnes {}
+.verticalLine {
+  border-left: thick solid #ffffff;
+}
+#bloc4 {font-size: 50%;}
+
+/*#bloc1 {position: absolute; top:25%; left: 5%;}
 #bloc2 {position: absolute; top:30%; left: 15%;}
 #num6 {position: absolute; top:20%; right: 35%;}
 #img_bloc1 {position: absolute; bottom: 15%; right: 10%; width: 15%; height: 15%;}
@@ -224,7 +312,16 @@
 .verticalLine {
   border-left: thick solid #ffffff;
 }
-#bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}
+#bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}*/
+
+
+/** SLIDE 6 **/
+
+#slide6 h1 {
+  max-width: 40%;
+
+}
+
 
 
 /** SLIDE 7 **/
@@ -233,6 +330,11 @@
 
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
 
+/** SLIDE 8 **/
+#myChart2{
+  
+
+}
 
 /** ANIMATIONS **/
 
