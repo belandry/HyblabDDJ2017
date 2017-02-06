@@ -107,6 +107,24 @@
     background-color: #62ed9d;
 }
 
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.gros {
+  font-size: 175%;
+}
+.important {
+  color: #e7857b;
+  border-color: #e7857b;
+}
+
+#slide1 {
+
+}
 
 /** SLIDE 1 **/
 #slide1 h1 {
@@ -212,3 +230,24 @@
 /** SLIDE 7 **/
 
 #img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
+
+#img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
+
+
+/** ANIMATIONS **/
+
+@keyframes apparition {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+@keyframes dezoom {
+  from {
+    /*margin-top: 50%;*/
+    /*font-size: 150%;*/
+  }
+
+  to {
+    font-size: 60%;
+  }
+}
