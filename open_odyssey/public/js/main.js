@@ -69,6 +69,7 @@ $(document).ready(function() {
             if (index===1)
             {
                 $('#fp-nav').hide();
+            }
             else
             {
                 $('#fp-nav').fadeIn();
@@ -83,14 +84,14 @@ $(document).ready(function() {
 });
 
 var $window = $(window);
-var $div_concerné = $('#slide3');
+/*var $div_concerné = $('#slide3');
  
 var scroll_max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 var wrapper_height = $('#wrapper').height();
-var wrapper_width = $('#wrapper').width();
+var wrapper_width = $('#wrapper').width();*/
  
 $window.scroll(function() {
-    console.log(scroll_max);
+    //console.log(scroll_max);
          
     $('#slide3').css("top", "+=300");
     $('#slide3').css("left", "+=300");
