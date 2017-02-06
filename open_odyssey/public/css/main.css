@@ -74,7 +74,11 @@
   }
 
   to {
-    font-size: 60%;
+    font-size: 70%;
+    position: flex;
+    margin-bottom: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -103,7 +107,7 @@
     background-color: #ffd44a;
 }
 
-#slide7, #slide8, #slide9, #slide10, #slide11 {
+#slide7, #slide8, #slide9, #slide10, #slide11, #slide12 {
     background-color: #62ed9d;
 }
 
@@ -167,7 +171,7 @@
 
 /** SLIDE 3 **/
 
-#slide3 {
+#text_slide3 {
   font-size: 125%;
   text-transform : uppercase;
   animation: dezoom 2.5s linear forwards 5s;
@@ -232,22 +236,3 @@
 #img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
 
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
-
-
-/** ANIMATIONS **/
-
-@keyframes apparition {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-
-@keyframes dezoom {
-  from {
-    /*margin-top: 50%;*/
-    /*font-size: 150%;*/
-  }
-
-  to {
-    font-size: 60%;
-  }
-}
