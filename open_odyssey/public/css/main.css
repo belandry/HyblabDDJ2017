@@ -103,7 +103,7 @@
 }
 
 .disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 2s;
+  animation: disparition 1.5s linear forwards 8s;
 }
 
 .disparition_ville1_slide3 {
@@ -366,22 +366,4 @@
 #myChart2{
   
 
-}
-
-/** ANIMATIONS **/
-
-@keyframes apparition {
-   0%  {opacity:0;}
-   100% {opacity:1;}
-}
-
-@keyframes dezoom {
-  from {
-    /*margin-top: 50%;*/
-    /*font-size: 150%;*/
-  }
-
-  to {
-    font-size: 60%;
-  }
 }
