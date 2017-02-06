@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="public/css/main.css">
 
     <script src="public/js/donut.js" defer></script>
+    <script src="public/js/radial.js" defer></script>
     <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
     <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
     ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
@@ -31,22 +32,80 @@
             <div>
               <h1 class="text">Des encombrants au lien social</h1>
               <h2 class="text">Zoom sur Environnements Solidaires : <br>une intiative mise en place dans un quartier priotaire nantais</h2>
-              <img src="public/img/Flèche-Bas.svg" id="flèche" alt="Une flèche en SVG" class="animated bounce infinite"/> 
+              <img src="public/img/Flèche-Bas.svg" id="fleche" alt="Une flèche en SVG" class="animated bounce infinite"/> 
           </div>
       </article>
 
-
+      <article class="section" id="slide2">
+        <!--<h1 class="text">Tout commence à Bellevue</h1>-->
+        <video id="video" data-autoplay loop>
+            <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        </video>
+      </article>
      
       <article class="section" id="slide3">
-        <h1 class="text">Tout commence à Bellevue</h1>
+        <p ><span class="text_important text_big">Bellevue</span> est un quartier à cheval sur <span class="text_important">nantes</span></br>
+        et <span class="text_important">Saint-Herblain</span> qui compte <span class="text_important text_big">19 400</span> habitants.
+        </p>
+        <p>
+          C'EST UN QUARTIER PRIORITAIRE DE LA POLITIQUE DE LA VILLE</br>
+          AVEC <u>UNE FORTE ACTIVITÉ ASSOCIATIVE.</u>
+        </p>
+        <p class="text_important" id="apparition">Une grande précarité</p>
+
+        <div id="myChart"></div>
+
       </article>
 
       <article class="section" id="slide4">
-        <h1>Texte intro</h1>
+        <h1> </h1>
+        <p>Encombrants Solidaires</br>
+        (devenu <strong>Environnements Solidaires</strong> en 2013)</br> 
+        est porté par l’association Ocean et six bailleurs sociaux depuis 2012.</br>
+        </p>
+        <hr width="50%"" color="white">
+        <p>
+          Elle propose des solutions d’emploi de proximité pour des habitants en difficulté</br>
+          dans le quartier de bellevue autour d’actions liées à la gestion des encombrants.</br>
+          Une initiative écologique et solidaire pour que ces objets vivent une seconde vie</br>
+          en profitant à d’autres personnes qui sont dans le besoin.</br>
+        </p>
       </article>
 
       <article class="section" id="slide5">
-        <h1>Tonne déchets</h1>
+        <h1>Une association qui prend</br> de l'ampleur...</h1>
+        <span class="text_important text_huge" id="bloc1">200</span>
+        <p id="bloc2">Tonnes <span class="text_important">de déchets</span></br> <span class="text_important">récoltés depuis</span> 2013</p>
+        <img src="public/img/bloc1.svg" alt="un bloc" id="img_bloc1" >
+        <img src="public/img/bloc2.svg" alt="un bloc" id="img_bloc2" >
+        <p>Atlantique Habitation <hr width="5%"" color="white" id="ligne2"></p>
+        <img src="public/img/bloc3.svg" alt="un bloc" id="img_bloc3" >
+        <p>SAMO <hr width="5%"" color="white" id="ligne3"></p>
+        <img src="public/img/bloc4.svg" alt="un bloc" id="img_bloc4" >
+        <p>Harmonie Habitat <hr width="5%"" color="white" id="ligne4"></p>
+        <img src="public/img/bloc5.svg" alt="un bloc" id="img_bloc5" >
+        <p>Habitat 44 <hr width="5%"" color="white" id="ligne5"></p>
+        <img src="public/img/bloc6.svg" alt="un bloc" id="img_bloc6" >
+        <p>LNH <hr width="5%"" color="white" id="ligne6"></p>
+        <img src="public/img/bloc7.svg" alt="un bloc" id="img_bloc7" >
+        <p>Nantes Métropole Habitats <hr width="5%"" color="white" id="ligne7"></p>
+        <img src="public/img/bloc8.svg" alt="un bloc" id="img_bloc8" >
+        <img src="public/img/date3.svg" alt="la date 2016" id="img_2016" >
+        <img src="public/img/date2.svg" alt="la date 2015" id="img_2015" >
+        <img src="public/img/date1.svg" alt="la date 2012" id="img_2012" >
+        <span class="text_important text_huge" id="num6">6</span>
+        <p id=bloc3>bailleurs</br> en 2017</p>
+        <img src="public/img/objet1.svg" alt="un micro-onde" id="img_micro" >
+        <img src="public/img/objet2.svg" alt="un lave linge" id="img_lave_linge" >
+        <img src="public/img/objet3.svg" alt="une commode" id="img_commode" >
+        <img src="public/img/objet4.svg" alt="un grille pain" id="img_grille_pain" >
+        <img src="public/img/ligne.svg" alt="une ligne" id="img_ligne" >
+        <p id="tonnes">= 1 tonnes</p>
+        <div class="verticalLine" id="bloc4">
+          <p>1 grille pain: 2 kg      1 lave linge:80kg</p>
+          <p>1 commode: 50 kg         1 micro-onde: 10kg</p>
+        </div>
       </article>
 
       <article class="section" id="slide6">
@@ -54,11 +113,29 @@
       </article>
 
       <article class="section" id="slide7">
-        <h1>Depuis 2013 Encombrant Solidaire devient... <br/>  Environnement Solidaire</h1>
+        <h1><span class="text_bleu">ENCOMBRANT SOLIDAIRE devient... </span><br/>  ENVIRONNEMENT SOLIDAIRE</h1>
+        <img src="public/img/Nadia.png" alt="un portrait" id="img_nadia" >
+        <p>« Nous nous sommes aperçus que notre travail dépassait </br>
+        le cadre de la récolte d’encombrants. En améliorant le cadre<br/>
+        de vie nous participons aussi à la vie sociale du quartier. »</p>
+        <hr width="5%"" color="red">
+        <p class="text_important" id="presNadia">Nadia, 46 ans, encadrante technique depuis 2013.</p>
       </article>
 
       <article class="section" id="slide8">
-        <h1>Le lien social au coeurs des préocupations d'Environnement Solidaire</h1>
+        <h1>Le<span class="text_bleu"> lien social</span> devient central dans<br/> les objectifs d'Environnements Solidaires</h1>
+        <p class="text_important">Des personnes isolées<br/>et démunies</p>
+        <hr width="10%"" class="text_bleu" size=4>
+        <hr width="5%"" class="important">
+        <p class="important presNadia">Nadia, 46 ans, encadrante technique depuis 2013.</p>
+      </article>
+
+      <article class="section" id="slide8">
+        <h1>Le<span class="text_bleu"> lien social</span> devient central dans<br/> les objectifs d'Environnements Solidaires</h1>
+        <p class="important">Des personnes isolées<br/>et démunies</p>
+        <hr width="10%" class="important">
+        <p>Sources: Insee - DGI</p>
+        <div id="myChart2"></div>
       </article>
 
       <article class="section" id="slide9">
@@ -66,21 +143,61 @@
       </article>
 
       <article class="section" id="slide10">
-        <h1>Sensibilisation écologique <br/> Evenement + ateliers </h1>
+        <p>"Le changement de nom vient aussi des évènements que nous organisons<br/>régulièrement afin de sensibilier les habitants. Dans ces ateliers, nous<br/> parlons de <span class="text_bleu">l'importance des écogestes dans leur vie quotidienne</span></p>
+        <p>Nous invitons beaucoup de familles, nous les mettons en contact.<br/>
+        Le but est qu'ils se connaissent et <span class="text_bleu">s'intégrent plus facilement dans leur quartier"</span></p>
+        <img src="public/img/Nadia.png" alt="un portrait" id="img_nadia2" >
+        <hr width="5%" class="important">
+        <p class="important presNadia">Nadia, 46 ans, encadrante technique depuis 2013.</p>
       </article>
 
       <article class="section" id="slide11">
-        <h1>Conclusion</h1>
-            <div id="myChart"></div>
-      </article >
+        <p id=p1>L’association <span class="text_majuscule">Environnements Solidaires</span> intervient dans le quartier<br/> Bellevue - Saint-Herblain depuis 2012. La collecte des encombrants a permis de créer<br/> du <span class="text_important">lien social</span> entre individus et générations, <span class="text_important">d’améliorer le vivre ensemble<br/></span> dans un quartier avec beaucoup de logements sociaux.<br/><br/>
+          
+        Cette initiative a été saluée par François Hollande qui lui a  décerné <span class="text_important">le prix<br/>  « La France s’engage »</span> en avril 2015. Suite à cela, Environnements Solidaires<br/> a gagné en visibilité, a été accompagnée dans son développement<br/> et a aussi bénéficié d’une aide financière.</p>
+
+        <p id=p2>Enfin, en quatre ans, <span class="text_important"><span class="text_big">2 000 logements</span> ont rejoint le dispositif.</span></p> 
+
+        <span class="text_bleu"><p id=p3>Pour Didier Gendron, président de l’association, l’objectif est désormais<br/> « d’étendre Environnements Solidaires à tous les bailleurs<br/> de Nantes Métropole et in fine, de France… »<br/><br/>
+
+        Affaire à suivre !</p></span>
+
+        <ul id="social-network">
+              <li><a href=""><img src="public/img/google-plus.svg" alt="google-plus" class="animated bounce infinite"></a></li>
+              <li><a href=""><img src="public/img/facebook-with-circle.svg" alt="facebook" class="animated bounce infinite"></a></li>
+              <li><a href=""><img src="public/img/twitter-with-circle.svg" alt="twitter" class="animated bounce infinite"></a></li>
+        </ul>
+
+        <div id="bandeau">
+          
+            <!-- Les organisateurs -->
+            <ul>
+              <!-- Logo Hyblab -->
+              <li><a href="http://www.hyblab.fr/"><img id="hyblab" src="public/img/logo_hyblab.png" alt="Hyblab DataSport"></a></li>
+              <li><a href="http://www.ouestmedialab.fr/"><img src="public/img/logo_oml.png" alt="Ouest Médialab"></a></li>
+              <li><a href="http://www.agrnantes.fr"><img src="public/img/ecoles/logo_agr.png" alt="AGR école de l'image"></a></li>
+              <li><a href="http://www.univ-nantes.fr/"><img src="public/img/ecoles/logo_universitenantes.jpg" alt="Université de Nantes"></a></li>
+              <li><a href="http://www.polytech.univ-nantes.fr/"><img src="public/img/ecoles/logo_polytech.png" alt="Polytech Nantes"></a></li>
+              <li><a href="http://sciencescom.audencia.com/"><img src="public/img/ecoles/logo_sciencescom.jpg" alt="SciencesCom"></a></li>
+            </ul>
+            <!-- Les autres logos -->
+            <ul>
+              <!-- Logos CC et opensource -->
+              <li><img id="cc" src="public/img/logo_cc.png" alt="Creative commons"></li>
+              <li><img id="opensource" src="public/img/logo_opensource.png" alt="Open source"></li>
+              <!-- Logo de votre partenaire -->
+              <li><a href="http://www.open-odyssey.org/"><img src="public/img/partenaires/logo_openodyssey.png" alt="Open Odyssey"></a></li>
+              <li><a href="http://www.presseocean.fr//"><img src="public/img/partenaires/logo_presseocean.jpg" alt="Presse Océan"></a></li>
+              <li><a href="http://www.terristoires.info/"><img src="public/img/partenaires/logo_terristoires.jpg" alt="Terristoires"></a></li>
+              <!-- Partenaires institutionnels -->
+              <li><a href="http://www.paysdelaloire.fr/"><img class="institutionnel" src="public/img/institutionnels/logo_pdl.png" alt="Pays de La Loire"></a></li>
+              <li><a href="http://www.stereolux.fr"><img class="institutionnel" src="public/img/institutionnels/logo_stereolux.png" alt="Stereolux"></a></li>
+              <li><a href="http://www.nantesmetropole.fr/"><img class="institutionnel" src="public/img/institutionnels/logo_nantesmetropole.png" alt="Nantes Métropole"></a></li>
+            </ul>
+          </div>
+      </article>
 
       </section >
-
-    <div id="myChart"></div>
-
-    <footer>
-        <!-- logos et autres -->
-    </footer>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>

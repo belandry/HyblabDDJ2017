@@ -1,3 +1,18 @@
+/** GLOBAL **/
+
+* {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Couleur menu droit */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+/* Polices */
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
@@ -27,17 +42,48 @@
     font-style: italic;
 }
 
-* {
-    font-family: 'Montserrat';
-    font-weight: normal;
-    font-style: normal;
+/* Tailles,couleurs ... des caractères */
+.text_big {
+  font-size: 175%;
 }
 
-body {
-    margin:0;
+.text_huge {
+  font-size: 400%;
+}
+
+.text_important {
+  color: #e7857b;
+}
+
+.text_bleu {
+  color: #18857f;
+}
+
+.text_majuscule {
+  text-transform : uppercase;
 }
 
 
+/** ANIMATIONS **/
+
+@keyframes apparition {
+   0%  {opacity:0;}
+   100% {opacity:1;}
+}
+
+@keyframes dezoom {
+  from {
+    /*margin-top: 50%;*/
+    /*font-size: 150%;*/
+  }
+
+  to {
+    font-size: 60%;
+  }
+}
+
+
+/** CONFIG SLIDES **/
 .section {
     display: flex;
     color: white;
@@ -57,30 +103,12 @@ body {
     font-weight: bold;
 }
 
-
-.fp-viewing-SECTION-SLIDE #fp-nav{
-   display:false
-}
-
 #slide1, #slide2, #slide3, #slide4, #slide5, #slide6 {
     background-color: #ffd44a;
 }
 
 #slide7, #slide8, #slide9, #slide10, #slide11 {
     background-color: #62ed9d;
-} 
-
-#flèche {
-    position: absolute;
-    bottom: 3%;
-    top: auto;
-    left:48%;
-    width: 2%;
-}
-
-
-#set-height {
-  display: block;
 }
 
 #v0 {
@@ -90,52 +118,199 @@ body {
   width: 100%;
 }
 
+.gros {
+  font-size: 175%;
+}
+.important {
+  color: #e7857b;
+  border-color: #e7857b;
+}
+
 #slide1 {
 
 }
 
+/** SLIDE 1 **/
 #slide1 h1 {
-  animation: anim 1.5s linear forwards 0s;
+  animation: apparition 1.5s linear forwards 0s;
   text-transform : uppercase;
 }
 
 #slide1 h2 {
   opacity:0;
-  animation: anim 1.5s linear forwards 1s;
+  animation: apparition 1.5s linear forwards 1s;
   text-transform : uppercase;
 }
 
-@keyframes anim {
+#fleche {
+    position: absolute;
+    bottom: 3%;
+    top: auto;
+    left:48%;
+    width: 2%;
+}
+
+
+/** SLIDE 2 **/
+
+#video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: #ffd44a; 
+    background-position: center center;
+    background-size: contain;
+    z-index:3;
+  }
+
+
+/** SLIDE 3 **/
+
+#slide3 {
+  font-size: 125%;
+  text-transform : uppercase;
+  animation: dezoom 2.5s linear forwards 5s;
+}
+
+#apparition {
+  opacity:0;
+  animation: apparition 5.5s linear forwards 5.5s;
+}
+
+
+/** SLIDE 4 **/
+
+#slide4 {
+  font-size: 125%;
+  font-family: 'Sanchez'
+}
+
+
+/** SLIDE 5 **/
+
+#slide5 h1{
+  text-transform: uppercase;
+  font-size: 150%;
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+
+
+/** SLIDE 6 **/
+
+#bloc1 {position: absolute; top:25%; left: 5%;}
+#bloc2 {position: absolute; top:30%; left: 15%;}
+#num6 {position: absolute; top:20%; right: 35%;}
+#img_bloc1 {position: absolute; bottom: 15%; right: 10%; width: 15%; height: 15%;}
+#img_bloc2 {position: absolute; bottom: 20%; right: 15%; width: 10%; height: 10%;}
+#img_bloc3 {position: absolute; bottom: 25%; right: 15%; width: 10%; height: 10%;}
+#img_bloc4 {position: absolute; bottom: 30%; right: 15%; width: 10%; height: 10%;}
+#img_bloc5 {position: absolute; bottom: 35%; right: 15%; width: 10%; height: 10%;}
+#img_bloc6 {position: absolute; bottom: 40%; right: 15%; width: 10%; height: 10%;}
+#img_bloc7 {position: absolute; bottom: 45%; right: 15%; width: 10%; height: 10%;}
+#img_bloc8 {position: absolute; bottom: 50%; right: 15%; width: 10%; height: 10%;}
+#img_2016 {position: absolute; bottom: 50%; right: 5%; width: 10%; height: 10%;}
+#img_2015 {position: absolute; bottom: 30%; right: 5%; width: 10%; height: 10%;}
+#img_2012 {position: absolute; bottom: 15%; right: 5%; width: 10%; height: 10%;}
+#bloc3 {position: absolute; top:20%; right: 30%;}
+#img_micro {position: absolute; bottom: 20%; left: 15%; width: 30%; height: 30%;}
+#img_lave_linge {position: absolute; bottom: 20%; left: 7.5%; width: 35%; height: 35%;}
+#img_commode {position: absolute; bottom: 20%; left: 0%; width: 35%; height: 40%;}
+#img_grille_pain {position: absolute; bottom: 20%; left: -7.5%; width: 35%; height: 30%;}
+#img_ligne {position: absolute; bottom: 10%; left: 0%; width: 35%; height: 30%;}
+#tonnes {position: absolute; bottom: 10%; left: 10%;}
+.verticalLine {
+  border-left: thick solid #ffffff;
+}
+#bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}
+
+
+/** SLIDE 7 **/
+
+#img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
+
+#img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
+
+
+/** ANIMATIONS **/
+
+@keyframes apparition {
    0%  {opacity:0;}
    100% {opacity:1;}
 }
 
-#slide2 {
+@keyframes dezoom {
+  from {
+    /*margin-top: 50%;*/
+    /*font-size: 150%;*/
+  }
+
+  to {
+    font-size: 60%;
+  }
 }
 
-#slide3 {
-}
 
-#slide4 {
-}
-
-#slide5 {
-}
-
-#slide6 {
-}
-
-#slide7 {
-}
-
-#slide8 {
-}
-
-#slide9 {
-}
-
-#slide10 {
-}
-
+/** SLIDE 11, CREDITS  **/
 #slide11 {
+}
+
+#slide11 p{
+  margin: 0 10% 2% 10%;
+}
+
+#p1 {
+
+}
+
+#p2 {
+
+}
+
+#p3 {
+
+}
+
+#social-network {
+  margin-right: 3%;
+}
+#social-network li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#social-network img {
+  height: 25px;
+  color: white; 
+}
+
+#bandeau {
+  padding: 2% 0 2%;
+  background-color: white;
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#bandeau li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px 5px 2px;
+}
+
+#bandeau img {
+  height: 30px;
+}
+
+#bandeau ul{
+  text-align: center;
 }

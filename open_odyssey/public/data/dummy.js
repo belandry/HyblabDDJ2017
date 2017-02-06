@@ -1,4 +1,4 @@
-{  
+var objet = {  
   "Personne isolé":
     [
       {
@@ -86,4 +86,4 @@
         "valeur": 0.192
       }
     ]
-}
+};
