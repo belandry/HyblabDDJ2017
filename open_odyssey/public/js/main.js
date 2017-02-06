@@ -95,12 +95,8 @@ $(document).ready(function() {
                     })
 
                 $("#ville1_slide3").addClass('apparition_ville1_slide3');
-                
+
                 $("#text_slide3_disp").addClass('disparition_text_slide3');
-                
-                /*$("#text_slide3").addClass('disparition_text_slide3');
-                $("#titre_slide3").addClass('disparition_text_slide3');
-                $("#ville1_side3").addClass('disparition_ville1_slide3');*/
             }
         },
         afterRender: function(){},
@@ -110,22 +106,3 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
-
-
-
-
-
-/*var $window = $(window);
-var $div_concerné = $('#slide3');
- 
-var scroll_max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-var wrapper_height = $('#wrapper').height();
-var wrapper_width = $('#wrapper').width();
- 
-$window.scroll(function() {
-    //console.log(scroll_max);
-         
-    $('#slide3').css("top", "+=300");
-    $('#slide3').css("left", "+=300");
-       
-});*/
