@@ -61,26 +61,37 @@
 
 /** ANIMATIONS **/
 
-@keyframes apparition {
+@keyframes apparition_text_slide3 {
    0%  {opacity:0;}
    100% {opacity:1;}
 }
 
 @keyframes dezoom {
-  from {
-  }
-
   to {
-    font-size: 70%;
-    position: flex;
-    margin-bottom: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 90%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes apparition_ville1_slide3 {
+  to {
+    bottom: -50%;
   }
 }
 
 .dezoom {
-  animation: dezoom 1.5s linear forwards 1s;
+  animation: dezoom 1.5s linear forwards 3s;
+}
+
+.apparition_text_slide3 {
+  animation: apparition_text_slide3 1.5s linear forwards 4s;
+}
+
+.apparition_ville1_slide3 {
+  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
 }
 
 
@@ -157,11 +168,30 @@
 
 /** SLIDE 3 **/
 
+#text_slide3 {
+  position: absolute;
+  font-size: 125%;
+  left:0;
+  right: 0;
+  top:38%;
+  bottom: 0;
+  text-transform : uppercase;
+}
 
-
-#apparition {
+#titre_slide3 {
+  position: absolute;
+  font-size: 145%;
+  left:12%;
+  top:45%;
   opacity:0;
-  animation: apparition 5.5s linear forwards 5.5s;
+}
+
+#ville1_side3 {
+    position: absolute;
+    bottom: -120%;
+    right: -15%;
+    width: 120%;
+    height: 120%;
 }
 
 
@@ -218,9 +248,3 @@
 #img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
 
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
-
-
-#text_slide3 {
-  font-size: 125%;
-  text-transform : uppercase;
-}

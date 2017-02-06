@@ -72,6 +72,8 @@ $(document).ready(function() {
             {
                 $('#fp-nav').hide();
                 $("#text_slide3").removeClass('dezoom');
+                $("#titre_slide3").removeClass('apparition_text_slide3');
+                $("#ville1_side3").removeClass('apparition_ville1_slide3');
             }
             else
             {
@@ -81,6 +83,8 @@ $(document).ready(function() {
             if (index===3)
             {
                 $("#text_slide3").addClass('dezoom');
+                $("#titre_slide3").addClass('apparition_text_slide3');
+                $("#ville1_side3").addClass('apparition_ville1_slide3');
             }
         },
         afterRender: function(){},
