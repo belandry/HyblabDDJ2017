@@ -151,6 +151,28 @@ $(document).ready(function() {
                 $("#dates").addClass('apparition_temps4_slide5');
 
             }
+            if (index===10)
+            {
+                $('#text1_slide10').addClass('apparition_text1_slide10');
+                $('#text2_slide10').addClass('apparition_text2_slide10');
+                $('#img_nadia2').addClass('apparition_img_nadia2');
+                $('#presNadia').addClass('apparition_presNadia');
+            }
+
+            if (index===11)
+            {
+                $('#text1_slide11').addClass('apparition_text1_slide11');
+                $('#img_animation').addClass('apparition_img_animation');
+                $('#text2_slide11').addClass('apparition_text2_slide11');
+            }
+
+            if (index===12)
+            {
+                $('#p1').addClass('apparition_p1');
+                $('#p2').addClass('apparition_p2');
+                $('#p3').addClass('apparition_p3');
+                $('#social_network').addClass('apparition_logos');
+            }
         },
         afterRender: function(){},
         afterResize: function(){},
