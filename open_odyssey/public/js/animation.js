@@ -95,7 +95,7 @@ function anim_step2_forward () {
     $("#ville2_slide3").addClass('apparition');
 
     $("#donut").removeClass('disparition');
-    $("#donut").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#donut").style.right="3%";$("#donut").removeClass('apparition');});
+    $("#donut").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#donut").style.right="-5%";$("#donut").removeClass('apparition');});
     $("#donut").addClass('apparition');
 };
 

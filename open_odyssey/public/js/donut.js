@@ -5,18 +5,18 @@ var myConfig = {
   "title":{
     "text":"Bellevue",
     "font-color":"#e7857b",
-    "font-size":"80%",
+    "font-size":"70%",
     "margin-top":"20%",
-    "margin-right":"35%"
+    "margin-right":"25%"
   },
   "subtitle":{
     "text":"Quartier prioritaire le plus<br/>peuplé de l’agglomération nantaise<br/><br/>Source : Insee, RP 2012",
     "font-color":"#fff",
     "font-weight":"normal",
-    "font-size":"25%",
+    "font-size":"20%",
     "text-align":"left",
-    "margin-top":"40%",
-    "margin-left":"20%"
+    "margin-top":"45%",
+    "margin-left":"25%"
   },
   "plot":{
     "value-box":{
