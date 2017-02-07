@@ -110,6 +110,7 @@ $(document).ready(function() {
             if (index===11)
             {
                 $('#text1_slide11').addClass('apparition_text1_slide11');
+                $('#img_animation').addClass('apparition_img_animation');
                 $('#text2_slide11').addClass('apparition_text2_slide11');
             }
 
