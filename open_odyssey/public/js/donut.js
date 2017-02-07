@@ -1,20 +1,27 @@
 var myConfig = {
   "type":"ring",
+  "background-color":"transparent",
+
   "title":{
-    "text":"Bellevue, "
+    "text":"Bellevue, ",
+    "font-size":"22%",
+    "margin-top":"20%"
   },
   "subtitle":{
-    "text":"quartier prioritaire le plus peuplée de l’agglomération nantaise",
+    "text":"quartier prioritaire le plus<br/>peuplée de l’agglomération nantaise",
     "font-weight":"normal",
-    "font-size":15
+    "font-size":"12%",
+    "text-align":"left",
+    "margin-top":"27%",
+    "margin-left":"46%"
   },
   "plot":{
     "value-box":{
       "text":"%pie-total-value",
       "placement":"center",
       "font-color":"black",
-      "font-size":35,
-      "font-family":"Georgia",
+      "font-size":"30%",
+      "font-family":"Montserrat",
       "font-weight":"normal",
       "rules":[
         {
@@ -32,7 +39,7 @@ var myConfig = {
       "tooltip":{
       "text":"%t: %v (%npv%)",
       "font-color":"black",
-      "font-family":"Georgia",
+      "font-family":"Montserrat",
       "text-alpha":1,
       "background-color":"white",
       "alpha":0.7,
@@ -40,16 +47,16 @@ var myConfig = {
       "border-color":"#cccccc",
       "line-style":"dotted",
       "border-radius":"10px",
-      "padding":"10%",
-      "placement":"node:center"
-    },
-    "slice":"50%",
+      "padding":"10%"
+      },
+    "slice":"60%",
     "border-width":1,
     "border-color":"#cccccc",
-    "line-style":"solild"
+    "line-style":"solid"
   },
   "plotarea":{
-    "margin-top":"12%"
+    "margin-left":"50%",
+    "margin-top":"20%"
   },
   "series":[
     {
@@ -119,10 +126,3 @@ var myConfig = {
     }
   ]
 };
-
-zingchart.render({ 
-	id : "myChart", 
-	data : myConfig, 
-	height: 400, 
-	width: "100%" 
-});

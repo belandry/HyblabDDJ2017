@@ -517,6 +517,12 @@
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
 
 
+/** SLIDE 8 **/
+#myChart2{position: absolute; top: 20%; right: 10%; opacity: 0;}
+#titre_s8{position: absolute; top: 5%; left: 20%; font-size: 170%; opacity: 0;}
+#text_slide8{position: absolute; top : 40%; left: 10%; font-size: 150%; opacity: 0;}
+#source_s8{font-size: 50% !important;}
+
 /** SLIDE 11, CREDITS  **/
 
 #p1, #p2, #p3, #social_network {

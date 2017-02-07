@@ -103,6 +103,11 @@ $(document).ready(function() {
                 $("#texte_s7").addClass('apparition_temps5_slide5');
 
             }
+            if (index===8) {
+                $("#titre_s8").addClass('apparition_titre_slide5');
+                $("#text_slide8").addClass('apparition_temps2_slide5');
+                $("#myChart2").addClass('apparition_temps4_slide5');
+            }
             if (index===5) {
                 $("#titre_gauche").addClass('apparition_titre_slide5');
                 $("#titre_droite").addClass('apparition_temps2_slide5');
