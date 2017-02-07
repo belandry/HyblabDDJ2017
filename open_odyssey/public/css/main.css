@@ -285,7 +285,7 @@
 }
 
 #ville2_slide3.apparition {
-  animation: apparition_ville2_slide3 6s linear forwards;
+  animation: apparition_ville2_slide3 4s linear forwards;
 }
 
 #ville2_slide3.de_apparition {

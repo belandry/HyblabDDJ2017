@@ -70,7 +70,6 @@ var myConfig = {
     fontFamily: 'Roboto'
   },
   scaleX: {
-<<<<<<< HEAD
     labels: ['1er Décile','Médian'],
     item: {
       fontFamily: "Roboto",
@@ -147,7 +146,4 @@ zingchart.render({
   data : myConfig, 
   height: 500, 
   width: 900 
-
-
-
-
+});
