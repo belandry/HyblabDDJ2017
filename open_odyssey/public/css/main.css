@@ -619,8 +619,8 @@
 /** SLIDE 7 **/
 #titre1_s7, #titre2_s7{opacity: 0; font-size: 170%;}
 #titre_s7{position: absolute; left: 0; right: 0; top: 35%;}
-#img_nadia{width: 35%; opacity: 0; float: left;}
-#texte_s7{opacity: 0; font-size: 180%; float: right; margin-top: 5%; margin-right: 15%}
+#img_nadia{position: absolute; opacity: 0; width: 35%; bottom: 20%; left: 5%;}
+#texte_s7{position: absolute; opacity: 0; right : 10%; bottom: 28%; font-size: 150%;}
 
 .dezoom_s7 {
   animation: dezoom_s7 1.5s linear forwards 6s;
