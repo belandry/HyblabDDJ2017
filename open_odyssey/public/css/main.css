@@ -626,10 +626,6 @@
   animation: dezoom_s7 1.5s linear forwards 6s;
 }
 
-/** SLIDE 10 **/
-
-#img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
-
 
 /** SLIDE 8 **/
 #myChart2{position: absolute; top: 20%; right: 10%; opacity: 0;}
@@ -637,37 +633,59 @@
 #text_slide8{position: absolute; top : 40%; left: 10%; font-size: 150%; opacity: 0;}
 #source_s8{font-size: 50% !important;}
 
-/** SLIDE 11, CREDITS  **/
+/** SLIDE 10 **/
+#slide10 #paragraphe10 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+#text1_slide10, #text2_slide10, #presNadia {
+  opacity: 0;
+}
+
+#slide10 p {
+  margin-bottom: 6%;
+}
+
+#img_nadia2{ position: absolute; bottom: 30%; left: -2%; width: 25%; opacity: 0;}
+
+/** SLIDE 11 **/
+#img_animation { position: absolute; top: 15%; left: 30%; width: 50%; }
+
+#text1_slide11, #text2_slide11, #img_animation {
+  opacity: 0;
+}
+#text1_slide11{position: absolute; top: 5%; left: 30%; font-size: 150%;}
+#text2_slide11{position: absolute; bottom: 5%; left: 20%; font-size: 125%;}
+/** SLIDE 12, CREDITS  **/
+#slide12 p{
+  margin: 0 10% 2% 10%;
+}
 
 #p1, #p2, #p3, #social_network {
   opacity: 0;
 }
-
-#paragraphe{
-  position: absolute;
-  right: 0;
-  left: 0;
-  top:10%;
-  font-size: 120%;
-}
+#p1{position: absolute; top: 5%; left: 14%; font-size: 105%;}
 
 #social_network {
-  margin-top: 3%;
-  margin-right: 2%;
+  margin-right: 3%;
 }
-
 #social_network li {
+  list-style-type: none;
   display: inline-block;
+  vertical-align: middle;
 }
 
 #social_network img {
-  height: 50px;
+  height: 25px;
+  color: white; 
 }
 
 #bandeau {
   padding: 2% 0 2%;
   background-color: white;
-  height: 15%;
+  height: 14%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -681,12 +699,13 @@
 }
 
 #bandeau img {
-  height: 40px;
+  height: 30px;
 }
 
 #bandeau ul{
   text-align: center;
 }
+
 
 .apparition_p1 {
   animation: apparition 1.5s linear forwards 1s;
@@ -702,4 +721,32 @@
 
 .apparition_logos {
   animation: apparition 1.5s linear forwards 4s;
+}
+
+.apparition_text1_slide10 {
+  animation: apparition 1.5s linear forwards 1s;
+}
+
+.apparition_text2_slide10 {
+  animation: apparition 1.5s linear forwards 2s;
+}
+
+.apparition_img_nadia2 {
+  animation: apparition 1.5s linear forwards 3s;
+}
+
+.apparition_presNadia {
+  animation: apparition 1.5s linear forwards 3s;
+}
+
+.apparition_text1_slide11 {
+  animation: apparition 1.5s linear forwards 1s;
+}
+
+.apparition_img_animation {
+  animation: apparition 1.5s linear forwards 1s;
+}
+
+.apparition_text2_slide11 {
+  animation: apparition 1.5s linear forwards 2s;
 }
