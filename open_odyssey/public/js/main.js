@@ -68,10 +68,19 @@ $(document).ready(function() {
         },
         afterLoad: function(anchorLink, index)
         {
+
+           
+           
             if (index===1)
             {
                 $('#fp-nav').hide();
                 $("#text_slide3").removeClass('dezoom');
+                $("#titre_slide3").removeClass('apparition_text_slide3');
+                $("#ville1_side3").removeClass('apparition_ville1_slide3');
+                $("#t2").removeClass('apparition_t2');
+                $("#op1").removeClass('apparition_op1');
+                $("#t22").removeClass('disparition_t2');
+                //$("#op11").removeClass('disparition_op1');
             }
             else
             {
@@ -81,6 +90,31 @@ $(document).ready(function() {
             if (index===3)
             {
                 $("#text_slide3").addClass('dezoom');
+                $("#titre_slide3").addClass('apparition_text_slide3');
+                $("#ville1_side3").addClass('apparition_ville1_slide3');
+            }
+            if (index==6){
+                //$("#t2").fadeIn(2000);
+                $("#t2").addClass('apparition_t2');
+                $("#op1").addClass('apparition_op1');
+
+                $("#t22").addClass('disparition_t2');
+                $("#op11").addClass('disparition_op1');
+                $("#op2").addClass('apparition_op2');
+                $("#t3").addClass('apparition_t3');
+                $("#t4").addClass('apparition_t4');
+                $("#t33").addClass('disparition_t3');
+                $("#t44").addClass('disparition_t3');
+                $("#op22").addClass('disparition_op2');
+                $("#op3").addClass('apparition_op3');
+                $("#t5").addClass('apparition_t5');
+                $("#op4").addClass('apparition_op4');
+                $("#t6").addClass('apparition_t6');
+
+
+
+
+                //$("#t2").hide();
             }
         },
         afterRender: function(){},

@@ -1,6 +1,5 @@
 var myConfig = {
   type: "hbar",
-<<<<<<< HEAD
   backgroundColor : "#ffd44a",
 
   title: {
@@ -143,7 +142,7 @@ var myConfig = {
 };
  
 zingchart.render({ 
-<<<<<<< HEAD
+
   id : 'mine', 
   data : myConfig, 
   height: 500, 
