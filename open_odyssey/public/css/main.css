@@ -81,6 +81,7 @@
 @keyframes disparition_ville1_slide3 {
    to {
     bottom: 100%;
+    opacity:0;
   }
 }
 
@@ -88,6 +89,10 @@
   to {
     bottom: -50%;
   }
+}
+
+.apparition_fleche {
+  animation: apparition 1.5s linear forwards 2s;
 }
 
 .dezoom {
@@ -161,6 +166,7 @@
     top: auto;
     left:48%;
     width: 2%;
+    opacity: 0;
 }
 
 
@@ -366,4 +372,65 @@
 #myChart2{
   
 
+}
+
+
+/** SLIDE 11, CREDITS  **/
+
+#p1, #p2, #p3, #social_network {
+  opacity: 0;
+}
+
+#social_network {
+  margin-right: 3%;
+}
+#social_network li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#social_network img {
+  height: 25px;
+  color: white; 
+}
+
+#bandeau {
+  padding: 2% 0 2%;
+  background-color: white;
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#bandeau li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px 5px 2px;
+}
+
+#bandeau img {
+  height: 30px;
+}
+
+#bandeau ul{
+  text-align: center;
+}
+
+.apparition_p1 {
+  animation: apparition 1.5s linear forwards 1s;
+}
+
+.apparition_p2 {
+  animation: apparition 1.5s linear forwards 2s;
+}
+
+.apparition_p3 {
+  animation: apparition 1.5s linear forwards 3s;
+}
+
+.apparition_logos {
+  animation: apparition 1.5s linear forwards 4s;
 }
