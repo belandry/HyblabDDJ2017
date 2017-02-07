@@ -3,17 +3,20 @@ var myConfig = {
   "background-color":"transparent",
 
   "title":{
-    "text":"Bellevue, ",
-    "font-size":"22%",
-    "margin-top":"20%"
+    "text":"Bellevue",
+    "font-color":"#e7857b",
+    "font-size":"80%",
+    "margin-top":"20%",
+    "margin-right":"35%"
   },
   "subtitle":{
-    "text":"quartier prioritaire le plus<br/>peuplée de l’agglomération nantaise",
+    "text":"Quartier prioritaire le plus<br/>peuplé de l’agglomération nantaise<br/><br/>Source : Insee, RP 2012",
+    "font-color":"#fff",
     "font-weight":"normal",
-    "font-size":"12%",
+    "font-size":"25%",
     "text-align":"left",
-    "margin-top":"27%",
-    "margin-left":"46%"
+    "margin-top":"40%",
+    "margin-left":"20%"
   },
   "plot":{
     "value-box":{
@@ -126,3 +129,10 @@ var myConfig = {
     }
   ]
 };
+
+zingchart.render({ 
+  id : 'donut', 
+  data : myConfig, 
+  height: 600, 
+  width: 1300 
+});

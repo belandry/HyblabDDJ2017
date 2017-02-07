@@ -141,6 +141,18 @@
   }
 }
 
+@keyframes apparition_donut_slide3 {
+  to {
+    right: 3%;
+  }
+}
+
+@keyframes disparition_donut_slide3 {
+  to {
+    right: -70%;
+  }
+}
+
 
 /** CONFIG SLIDES **/
 .section {
@@ -253,6 +265,12 @@
     width: 40%;
 }
 
+#donut {
+  position: absolute;
+  top:15%;
+  right:-70%;
+}
+
 #text_slide3_app.dezoom {
   animation: dezoom_slide3 1s linear forwards;
 }
@@ -294,7 +312,7 @@
 }
 
 #ville2_slide3.apparition {
-  animation: apparition_ville2_slide3 4s linear forwards;
+  animation: apparition_ville2_slide3 2s linear forwards;
 }
 
 #ville2_slide3.de_apparition {
@@ -307,6 +325,14 @@
 
 #revenu_median.disparition {
   animation: disparition_revenu_median_slide3 1.5s linear forwards;
+}
+
+#donut.apparition {
+  animation: apparition_donut_slide3 1.5s linear forwards;
+}
+
+#donut.disparition {
+  animation: disparition_donut_slide3 1.5s linear forwards;
 }
 
 #myChart2 {

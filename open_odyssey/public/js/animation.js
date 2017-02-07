@@ -93,6 +93,10 @@ function anim_step2_forward () {
     $("#ville2_slide3").removeClass('de_apparition');
     $("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-2%";$("#ville2_slide3").removeClass('apparition');});
     $("#ville2_slide3").addClass('apparition');
+
+    $("#donut").removeClass('disparition');
+    $("#donut").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#donut").style.right="3%";$("#donut").removeClass('apparition');});
+    $("#donut").addClass('apparition');
 };
 
 
@@ -120,6 +124,10 @@ function anim_step3_backward () {
     $("#ville2_slide3").removeClass('apparition');
     $("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-38%";$("#ville2_slide3").removeClass('de_apparition');});
     $("#ville2_slide3").addClass('de_apparition');
+
+    $("#donut").removeClass('apparition');
+    $("#donut").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#donut").style.right="-70%";$("#donut").removeClass('disparition');});
+    $("#donut").addClass('disparition');
 }
 
 function reset_anim_slide3() {
@@ -140,6 +148,9 @@ function reset_anim_slide3() {
 
 	$("#ville2_slide3").removeClass('apparition');
 	$("#ville2_slide3").removeClass('de_apparition');
+
+	$("#donut").removeClass('apparition');
+	$("#donut").removeClass('disparition');
 
 	document.querySelector("#ville1_slide3").style.bottom="-180%";
 	document.querySelector("#ville1_slide3").style.opacity="1";
