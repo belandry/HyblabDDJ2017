@@ -70,6 +70,7 @@ $(document).ready(function() {
                 $('#fp-nav').hide();
 
                 $('#div_apparition_fleche').addClass('apparition_fleche');
+                reset_anim_slide3();
 
                 /* Reset animation autres pages */
                 /*$("#text_slide3").removeClass('dezoom');

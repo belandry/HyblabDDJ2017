@@ -21,71 +21,33 @@ window.onload = function() {
 		{
 			case 0:
 			if (delta==-1) {
-				$("#text_slide3_app").removeClass('rezoom');
-				$("#text_slide3_app").addClass('dezoom');
-
-				$("#titre_slide3").removeClass('disparition');
-    			$("#titre_slide3").addClass('apparition');
-
-				$("#ville1_slide3").removeClass('de_apparition');
-				$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('apparition');});
-    			$("#ville1_slide3").addClass('apparition');
-    			
+				anim_step1_forward();
 				animation_step_slide3++;
 			}
-			else
-			{
+			else {
 				$.fn.fullpage.setAllowScrolling(true);
 			}
 			break;
 
 			case 1:
 			if (delta==-1) {
-				$("#text_slide3_disp").removeClass('de_disparition');
-				$("#text_slide3_disp").addClass('disparition');
-
-				$("#ville1_slide3").removeClass('de_disparition');
-				$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="100%";$("#ville1_slide3").removeClass('disparition'); });
-    			$("#ville1_slide3").addClass('disparition');
-
-    			$("#ville2_slide3").removeClass('de_apparition');
-    			$("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-2%";$("#ville2_slide3").removeClass('apparition');});
-    			$("#ville2_slide3").addClass('apparition');
-
+				anim_step2_forward();
 				animation_step_slide3++;
 			}
 			else {
-				$("#text_slide3_app").removeClass('dezoom');
-				$("#text_slide3_app").addClass('rezoom');
-
-				$("#titre_slide3").removeClass('apparition');
-    			$("#titre_slide3").addClass('disparition');
-
-    			$("#ville1_slide3").removeClass('apparition');
-    			$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-180%";$("#ville1_slide3").removeClass('de_apparition');});
-    			$("#ville1_slide3").addClass('de_apparition');
-    			
+    			anim_step2_backward();
 				animation_step_slide3--;
 			}
 			break;
 
 			case 2: 
 			if (delta==-1) {
-				
+				$.fn.fullpage.setAllowScrolling(true);
     			//animation_step_slide3++;
 			}
 			else {
-				$("#text_slide3_disp").removeClass('disparition');
-				$("#text_slide3_disp").addClass('de_disparition');
-
-				$("#ville1_slide3").removeClass('disparition');
-				$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('de_disparition');});
-    			$("#ville1_slide3").addClass('de_disparition');
-
-    			$("#ville2_slide3").removeClass('apparition');
-    			$("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-38%";$("#ville2_slide3").removeClass('de_apparition');});
-    			$("#ville2_slide3").addClass('de_apparition');
-
+				
+				anim_step3_backward();
 				animation_step_slide3--;
 			}
 			break;
@@ -95,31 +57,10 @@ window.onload = function() {
 				
 			}
 			else {
-				//document.querySelector("#ville1_slide3").style.bottom="-180%";
-				/*$("#ville1_slide3").removeClass('disparition');
-    			$("#ville1_slide3").addClass('de_disparition');*/
 				animation_step_slide3--;
 			}
 			break;
 		}
-
-		if (delta==-1)
-		{
-			
-		}
-/*
-		$("#titre_slide3").addClass('apparition_titre_slide3');
-    	$("#ville1_slide3").addClass('apparition_ville1_slide3');
-
-var myElement = document.querySelector("#ville1_slide3").style.opacity="0";
-
-
-		$("#text_slide3_app").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_dezoom);
-        $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_app_ville1);
-        
-*/
-
-
 
 		return false;
 	}
@@ -127,16 +68,79 @@ var myElement = document.querySelector("#ville1_slide3").style.opacity="0";
 }
 
 
-/*
-function anim_apres_dezoom (e) {
-    
+
+function anim_step1_forward () {
+    $("#text_slide3_app").removeClass('rezoom');
+	$("#text_slide3_app").addClass('dezoom');
+
+	$("#titre_slide3").removeClass('disparition');
+    $("#titre_slide3").addClass('apparition');
+
+	$("#ville1_slide3").removeClass('de_apparition');
+	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('apparition');});
+    $("#ville1_slide3").addClass('apparition');
 };
 
-function anim_apres_app_ville1 (e) {
-    document.querySelector("#ville1_slide3").style.bottom="-50%";
-    $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {var myElement = document.querySelector("#ville1_slide3").style.opacity="0";});
-    $("#ville1_slide3").addClass('disparition_ville1_slide3');
-    $("#text_slide3_disp").addClass('disparition_text_slide3');
-    $("#ville2_slide3").addClass('apparition_ville2_slide3');
+function anim_step2_forward () {
+    $("#text_slide3_disp").removeClass('de_disparition');
+	$("#text_slide3_disp").addClass('disparition');
+
+	$("#ville1_slide3").removeClass('de_disparition');
+	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="100%";document.querySelector("#ville1_slide3").style.opacity="0";$("#ville1_slide3").removeClass('disparition'); });
+    $("#ville1_slide3").addClass('disparition');
+
+    $("#ville2_slide3").removeClass('de_apparition');
+    $("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-2%";$("#ville2_slide3").removeClass('apparition');});
+    $("#ville2_slide3").addClass('apparition');
 };
-*/
+
+
+function anim_step2_backward () {
+    $("#text_slide3_app").removeClass('dezoom');
+	$("#text_slide3_app").addClass('rezoom');
+
+	$("#titre_slide3").removeClass('apparition');
+    $("#titre_slide3").addClass('disparition');
+
+    $("#ville1_slide3").removeClass('apparition');
+    $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-180%";$("#ville1_slide3").removeClass('de_apparition');});
+    $("#ville1_slide3").addClass('de_apparition');
+};
+
+function anim_step3_backward () {
+	$("#text_slide3_disp").removeClass('disparition');
+	$("#text_slide3_disp").addClass('de_disparition');
+
+	$("#ville1_slide3").removeClass('disparition');
+	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('de_disparition');});
+    $("#ville1_slide3").addClass('de_disparition');
+
+    $("#ville2_slide3").removeClass('apparition');
+    $("#ville2_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville2_slide3").style.left="-38%";$("#ville2_slide3").removeClass('de_apparition');});
+    $("#ville2_slide3").addClass('de_apparition');
+}
+
+function reset_anim_slide3() {
+	$("#text_slide3_app").removeClass('dezoom');
+	$("#text_slide3_app").removeClass('rezoom');
+
+	$("#titre_slide3").removeClass('disparition');
+	$("#titre_slide3").removeClass('apparition');
+
+	$("#text_slide3_disp").removeClass('de_disparition');
+	$("#text_slide3_disp").removeClass('disparition');
+
+	$("#ville1_slide3").removeClass('apparition');
+	$("#ville1_slide3").removeClass('de_apparition');
+
+	$("#ville1_slide3").removeClass('disparition');
+	$("#ville1_slide3").removeClass('de_disparition');
+
+	$("#ville2_slide3").removeClass('apparition');
+	$("#ville2_slide3").removeClass('de_apparition');
+
+	document.querySelector("#ville1_slide3").style.bottom="-180%";
+	document.querySelector("#ville1_slide3").style.opacity="1";
+	document.querySelector("#ville2_slide3").style.left="-38%";
+	animation_step_slide3=0;
+}
