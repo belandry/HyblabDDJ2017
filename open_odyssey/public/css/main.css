@@ -235,6 +235,12 @@
 
 /** SLIDE 3 **/
 
+#myChart{
+  position: absolute;
+  right: 35%;
+  top: 40%;
+}
+
 #text_slide3_app {
   position: absolute;
   font-size: 125%;
@@ -658,6 +664,7 @@
 #titre_s8{position: absolute; top: 5%; left: 20%; font-size: 170%; opacity: 0;}
 #text_slide8{position: absolute; top : 40%; left: 10%; font-size: 150%; opacity: 0;}
 #source_s8{font-size: 50% !important;}
+#legende_data_slide8{position: absolute; bottom: 4%; right: 22.5%; font-size: 75%; opacity: 0;}
 
 /** SLIDE 10 **/
 #slide10 #paragraphe10 {
