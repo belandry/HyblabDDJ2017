@@ -494,10 +494,139 @@
 
 
 /** SLIDE 6 **/
+#t22{
+  top : 20%;
+  height : 10%;
+}
+#op1,#op2,#op22{
+   
+    width: 40%;
+    height : 38%;
+    bottom: 10%
+    
 
-#slide6 h1 {
-  max-width: 40%;
+}
 
+.bleuciel{
+  color : #10DBF0;
+}
+
+#t2{
+  opacity :0;
+  
+  top: 5;
+  right: 12%;
+  left : 12%;
+}
+#t3{
+  opacity :0;
+  top : -100%;  
+}
+#t4{
+  opacity :0;
+  
+  top: 5%;
+  right: 10%;
+  left : 10%;
+}
+#t5{
+  opacity :0;
+  position: absolute;
+  top: 44%;
+  right: 10%;
+  left : 10%;
+  
+}
+#t6{
+  opacity :0;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  left : 10%;
+  
+}
+
+
+#op1,#op2,#op3,#t6,#op4{
+  opacity: 0;
+
+}
+
+.apparition_t2{
+  animation: fadeInUp 2000ms linear forwards 1s;
+  
+
+
+}
+.apparition_op1{
+  animation: apparition 2s linear forwards 2500ms;
+  position : absolute;
+  top : 40%;
+  left : 30%;
+
+}
+.disparition_t2{
+  animation: fadeOutUpBig 3s linear forwards 7s;
+}
+.disparition_op1{
+  animation: disparition 2s linear forwards 8s;
+}
+
+.apparition_op2{
+  animation: apparition 2s linear forwards 8500ms;
+  position : absolute;
+  top : 10%;
+  height: 60%;
+  width: 60%;
+
+}
+.apparition_t3{
+  animation: fadeInUp 800ms linear forwards 9000ms;
+  
+}
+
+.apparition_t4{
+  animation: fadeInUp 800ms linear forwards 11000ms;
+  
+}
+.disparition_t3{
+  animation: fadeOutDownBig 3s linear forwards 20000ms;
+  }
+
+.disparition_op2{
+  animation: disparition 2s linear forwards 20000ms;
+}
+
+.apparition_op3{
+  animation: apparition 2s linear forwards 20500ms;
+  position : absolute;
+  top : 0%;
+  height: 50%;
+  width: 40%;
+  left : 30%;
+
+}
+.apparition_t5{
+  animation: fadeInUp 800ms linear forwards 21000ms;
+  top : -50%;
+  
+}
+
+
+.apparition_op4{
+  animation: apparition 2s linear forwards 21000ms;
+  position : absolute;
+  top : 70%;
+ 
+  width: 85%;
+  left : 8%;
+
+}
+
+.apparition_t6{
+  animation: fadeInUp 800ms linear forwards 22000ms;
+  bottom : 15%;
+  
 }
 
 
