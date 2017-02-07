@@ -72,7 +72,7 @@ $(document).ready(function() {
             {
                 $('#fp-nav').hide();
 
-                $('#apparition_fleche').addClass('apparition_fleche');
+                $('#div_apparition_fleche').addClass('apparition_fleche');
 
                 /* Reset animation autres pages */
                 /*$("#text_slide3").removeClass('dezoom');
@@ -88,19 +88,9 @@ $(document).ready(function() {
 
             if (index===3)
             {
+                $("#text_slide3_app").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_dezoom);
+                $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_app_ville1);
                 $("#text_slide3_app").addClass('dezoom');
-                $("#titre_slide3").addClass('apparition_titre_slide3');
-
-                $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
-                    function(e) {
-                        var myElement = document.querySelector("#ville1_slide3");
-                        myElement.style.bottom="-50%";
-                        $("#ville1_slide3").addClass('disparition_ville1_slide3');
-                    });
-
-                $("#ville1_slide3").addClass('apparition_ville1_slide3');
-
-                $("#text_slide3_disp").addClass('disparition_text_slide3');
             }
 
             if (index===11)
@@ -118,3 +108,16 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
+
+function anim_apres_dezoom (e) {
+    $("#titre_slide3").addClass('apparition_titre_slide3');
+    $("#ville1_slide3").addClass('apparition_ville1_slide3');
+};
+
+function anim_apres_app_ville1 (e) {
+    document.querySelector("#ville1_slide3").style.bottom="-50%";
+    $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {var myElement = document.querySelector("#ville1_slide3").style.opacity="0";});
+    $("#ville1_slide3").addClass('disparition_ville1_slide3');
+    $("#text_slide3_disp").addClass('disparition_text_slide3');
+    $("#ville2_slide3").addClass('apparition_ville2_slide3');
+};
