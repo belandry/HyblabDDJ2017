@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['accueil', 'bellevue', 'quartier-bellevue', 'encombrants-solidaires', 'ampleur-association', 'operateurs', 'environnements-solidaires', 'lien-social', 'porte-à-porte', 'explication-nom', 'conclusion', 'crédit'],
+        anchors:['accueil', 'bellevue', 'quartier-bellevue', 'encombrants-solidaires', 'ampleur-association', 'operateurs', 'environnements-solidaires', 'lien-social', 'porte-à-porte', 'explication-nom', 'explication-nom2','conclusion'],
         navigation: true,
         navigationPosition: 'right',
 
@@ -99,7 +99,21 @@ $(document).ready(function() {
                 $("#text_slide3_disp").addClass('disparition_text_slide3');
             }
 
+            if (index===10)
+            {
+                $('#text1_slide10').addClass('apparition_text1_slide10');
+                $('#text2_slide10').addClass('apparition_text2_slide10');
+                $('#img_nadia2').addClass('apparition_img_nadia2');
+                $('#presNadia').addClass('apparition_presNadia');
+            }
+
             if (index===11)
+            {
+                $('#text1_slide11').addClass('apparition_text1_slide11');
+                $('#text2_slide11').addClass('apparition_text2_slide11');
+            }
+
+            if (index===12)
             {
                 $('#p1').addClass('apparition_p1');
                 $('#p2').addClass('apparition_p2');
