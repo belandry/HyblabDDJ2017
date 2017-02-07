@@ -1,4 +1,5 @@
 var animation_step_slide3=0;
+var poucentage_apparition_ville1="-75%";
 
 window.onload = function() {
 
@@ -73,11 +74,11 @@ function anim_step1_forward () {
     $("#text_slide3_app").removeClass('rezoom');
 	$("#text_slide3_app").addClass('dezoom');
 
-	$("#titre_slide3").removeClass('disparition');
-    $("#titre_slide3").addClass('apparition');
+	$("#revenu_median").removeClass('disparition');
+    $("#revenu_median").addClass('apparition');
 
 	$("#ville1_slide3").removeClass('de_apparition');
-	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('apparition');});
+	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom=poucentage_apparition_ville1;$("#ville1_slide3").removeClass('apparition');});
     $("#ville1_slide3").addClass('apparition');
 };
 
@@ -99,8 +100,8 @@ function anim_step2_backward () {
     $("#text_slide3_app").removeClass('dezoom');
 	$("#text_slide3_app").addClass('rezoom');
 
-	$("#titre_slide3").removeClass('apparition');
-    $("#titre_slide3").addClass('disparition');
+	$("#revenu_median").removeClass('apparition');
+    $("#revenu_median").addClass('disparition');
 
     $("#ville1_slide3").removeClass('apparition');
     $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-180%";$("#ville1_slide3").removeClass('de_apparition');});
@@ -111,8 +112,9 @@ function anim_step3_backward () {
 	$("#text_slide3_disp").removeClass('disparition');
 	$("#text_slide3_disp").addClass('de_disparition');
 
+	document.querySelector("#ville1_slide3").style.opacity="1";
 	$("#ville1_slide3").removeClass('disparition');
-	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom="-60%";$("#ville1_slide3").removeClass('de_disparition');});
+	$("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {document.querySelector("#ville1_slide3").style.bottom=poucentage_apparition_ville1;$("#ville1_slide3").removeClass('de_disparition');});
     $("#ville1_slide3").addClass('de_disparition');
 
     $("#ville2_slide3").removeClass('apparition');
@@ -124,8 +126,8 @@ function reset_anim_slide3() {
 	$("#text_slide3_app").removeClass('dezoom');
 	$("#text_slide3_app").removeClass('rezoom');
 
-	$("#titre_slide3").removeClass('disparition');
-	$("#titre_slide3").removeClass('apparition');
+	$("#revenu_median").removeClass('disparition');
+	$("#revenu_median").removeClass('apparition');
 
 	$("#text_slide3_disp").removeClass('de_disparition');
 	$("#text_slide3_disp").removeClass('disparition');
