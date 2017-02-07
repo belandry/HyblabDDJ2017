@@ -1,4 +1,15 @@
-/* just a sample css rule to show that everything works */
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Lato:400';
+ 
+ 
+html, body, #myChart{
+  height:100%;
+  width:100%;
+}
+ 
+.zc-ref {
+  display: none;
+}
 footer p
 {
   font-size: small;
@@ -13,10 +24,6 @@ header img{
   max-width: 100%;
 	height: auto;
 }
-
-
-
-
 
 #myChart2 {
   display: flex;
