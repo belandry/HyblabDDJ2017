@@ -95,18 +95,6 @@ $(document).ready(function() {
                 $('#fp-nav').fadeIn();
             }
 
-            if (index===11)
-            {
-                console.log('coucou');
-                $('#test').addClass('apparition_fleche');
-
-
-                $('#p1').addClass('apparition_p1');
-                $('#p2').addClass('apparition_p2');
-                $('#p3').addClass('apparition_p3');
-                $('#social_network').addClass('apparition_logos');
-            }
-
             if (index===3)
             {
                 $("#text_slide3_app").addClass('dezoom');
@@ -122,6 +110,14 @@ $(document).ready(function() {
                 $("#ville1_slide3").addClass('apparition_ville1_slide3');
 
                 $("#text_slide3_disp").addClass('disparition_text_slide3');
+            }
+
+            if (index===11)
+            {
+                $('#p1').addClass('apparition_p1');
+                $('#p2').addClass('apparition_p2');
+                $('#p3').addClass('apparition_p3');
+                $('#social_network').addClass('apparition_logos');
             }
         },
         afterRender: function(){},

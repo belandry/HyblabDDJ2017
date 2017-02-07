@@ -91,30 +91,6 @@
   }
 }
 
-.apparition_fleche {
-  animation: apparition 1.5s linear forwards 2s;
-}
-
-.dezoom {
-  animation: dezoom 1.5s linear forwards 3s;
-}
-
-.apparition_titre_slide3 {
-  animation: apparition 1.5s linear forwards 4s;
-}
-
-.apparition_ville1_slide3 {
-  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
-}
-
-.disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 8s;
-}
-
-.disparition_ville1_slide3 {
-  animation: disparition_ville1_slide3 5s linear forwards 3s;
-}
-
 
 /** CONFIG SLIDES **/
 .section {
@@ -169,6 +145,10 @@
     opacity: 0;
 }
 
+.apparition_fleche {
+  animation: apparition 1.5s linear forwards 2s;
+}
+
 
 /** SLIDE 2 **/
 
@@ -214,6 +194,26 @@
     right: -10%;
     width: 120%;
     height: 120%;
+}
+
+.dezoom {
+  animation: dezoom 1.5s linear forwards 3s;
+}
+
+.apparition_titre_slide3 {
+  animation: apparition 1.5s linear forwards 4s;
+}
+
+.apparition_ville1_slide3 {
+  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
+}
+
+.disparition_text_slide3 {
+  animation: disparition 1.5s linear forwards 8s;
+}
+
+.disparition_ville1_slide3 {
+  animation: disparition_ville1_slide3 5s linear forwards 3s;
 }
 
 
