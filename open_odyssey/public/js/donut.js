@@ -1,14 +1,19 @@
 var myConfig = {
   "type":"ring",
   "background-color":"transparent",
+
   "title":{
     "text":"Bellevue, ",
-    "font-size":"22%"
+    "font-size":"22%",
+    "margin-top":"20%"
   },
   "subtitle":{
-    "text":"quartier prioritaire le plus peuplée de l’agglomération nantaise",
+    "text":"quartier prioritaire le plus<br/>peuplée de l’agglomération nantaise",
     "font-weight":"normal",
-    "font-size":"12%"
+    "font-size":"12%",
+    "text-align":"left",
+    "margin-top":"27%",
+    "margin-left":"46%"
   },
   "plot":{
     "value-box":{
@@ -47,10 +52,11 @@ var myConfig = {
     "slice":"60%",
     "border-width":1,
     "border-color":"#cccccc",
-    "line-style":"solild"
+    "line-style":"solid"
   },
   "plotarea":{
-    "margin-top":"15%"
+    "margin-left":"50%",
+    "margin-top":"20%"
   },
   "series":[
     {

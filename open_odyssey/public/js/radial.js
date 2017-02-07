@@ -118,9 +118,9 @@ anychart.onDocumentReady(function() {
           },
           "series":[
             {
-              "size":"100%",
+              "size":"50%",
               "values":[33],
-              "backgroundColor":"#62ed9d",
+              "backgroundColor":"#1C7600",
               "borderWidth":46,
               "borderColor":"#B9121B",
               "text":"Bellevue Saint Herblain",
