@@ -149,7 +149,7 @@
 
 @keyframes disparition_donut_slide3 {
   to {
-    right: -70%;
+    right: -150%;
   }
 }
 
@@ -274,7 +274,7 @@
 #donut {
   position: absolute;
   top:15%;
-  right:-70%;
+  right:-150%;
 }
 
 #text_slide3_app.dezoom {
