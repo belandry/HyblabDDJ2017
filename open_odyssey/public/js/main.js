@@ -72,6 +72,19 @@ $(document).ready(function() {
             if (index===1)
             {
                 $('#fp-nav').hide();
+
+                /* Animation et appartion fleche */
+                $('#fleche').addClass('apparition_fleche');
+                $("#fleche").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+                    function(e) {
+                         var myElement = document.querySelector("#fleche");
+                        myElement.style.opacity="1";
+                        $('#fleche').removeClass('apparition_fleche');
+                        $('#fleche').addClass('animated bounce infinite');
+                    })
+
+
+                /* Reset animation autres pages */
                 $("#text_slide3").removeClass('dezoom');
                 $("#titre_slide3").removeClass('apparition_text_slide3');
                 $("#ville1_side3").removeClass('apparition_ville1_slide3');
@@ -85,12 +98,27 @@ $(document).ready(function() {
 
             if (index===3)
             {
-                $("#text_slide3").addClass('dezoom');
-                $("#titre_slide3").addClass('apparition_text_slide3');
-                $("#ville1_side3").addClass('apparition_ville1_slide3');
-                $("#text_slide3").addClass('disparition_text_slide3');
-                $("#titre_slide3").addClass('disparition_text_slide3');
-                $("#ville1_side3").addClass('disparition_ville1_slide3');
+                $("#text_slide3_app").addClass('dezoom');
+                $("#titre_slide3").addClass('apparition_titre_slide3');
+
+                $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+                    function(e) {
+                        var myElement = document.querySelector("#ville1_slide3");
+                        myElement.style.bottom="-50%";
+                        $("#ville1_slide3").addClass('disparition_ville1_slide3');
+                    });
+
+                $("#ville1_slide3").addClass('apparition_ville1_slide3');
+
+                $("#text_slide3_disp").addClass('disparition_text_slide3');
+            }
+
+            if (index===11)
+            {
+                $('#p1').addClass('apparition_p1');
+                $('#p2').addClass('apparition_p2');
+                $('#p3').addClass('apparition_p3');
+                $('#social_network').addClass('apparition_logos');
             }
             if (index===5) {
                 $("#titre_gauche").addClass('apparition_titre_slide5');
@@ -123,22 +151,3 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
-
-
-
-
-
-/*var $window = $(window);
-var $div_concerné = $('#slide3');
- 
-var scroll_max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-var wrapper_height = $('#wrapper').height();
-var wrapper_width = $('#wrapper').width();
- 
-$window.scroll(function() {
-    //console.log(scroll_max);
-         
-    $('#slide3').css("top", "+=300");
-    $('#slide3').css("left", "+=300");
-       
-});*/
