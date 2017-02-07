@@ -152,6 +152,27 @@ $(document).ready(function() {
                 $("#dates").addClass('apparition_temps4_slide5');
 
             }
+            if (index == 9){
+                $("#t7").addClass('apparition_t7');
+                $("#t8").addClass('apparition_t8');
+                $("#t77").addClass('dezoome');
+                $("#t88").addClass('dezoome');
+                $("#t9").addClass('apparition_t9');
+                $("#t1").addClass('apparition_t1');
+                $("#t777").addClass('disparition');
+                $("#t888").addClass('disparition');
+                $("#t99").addClass('disparition');
+                $("#t11").addClass('disparition');
+                $("#jeff").addClass('apparition_jeff');
+                $("#u1").addClass('apparition_u1');
+                $("#u2").addClass('apparition_u2');
+                $("#u11").addClass('disparition_u');
+                $("#u22").addClass('disparition_u');
+                $("#jef").addClass('disparition_u');
+                $("#s1").addClass('apparition_s');
+                $("#s2").addClass('apparition_s');
+                $("#u3").addClass('apparition_u3');
+            }
             if (index===10)
             {
                 $('#text1_slide10').addClass('apparition_text1_slide10');

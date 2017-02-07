@@ -133,6 +133,6 @@ var myConfig = {
 zingchart.render({ 
   id : 'donut', 
   data : myConfig, 
-  height: 600, 
-  width: 1300 
+  height: 400, 
+  width: 1100 
 });

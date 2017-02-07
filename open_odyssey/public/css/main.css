@@ -666,6 +666,159 @@
 #source_s8{font-size: 50% !important;}
 #legende_data_slide8{position: absolute; bottom: 4%; right: 22.5%; font-size: 75%; opacity: 0;}
 
+/* slide 9 */
+
+@keyframes dezoome {
+  from {
+  }
+
+  to {
+    font-size: 95%;
+    
+    margin-top : -20%;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#u1{
+   opacity:0;
+  position: absolute;
+  right : 25%;
+  bottom : 25%;
+
+
+}
+#u2{
+   opacity:0;
+  position: absolute;
+  right : 25%;
+  bottom : 15%;
+
+
+}
+#t9{
+  opacity: 0;
+  position: absolute;
+  bottom : 40%;
+
+}
+#t8{
+  opacity :0;
+  position : absolute;
+  right: 7%;
+  left: 25%;
+
+ 
+}
+#t7{
+  opacity:0;
+  position: absolute;
+  right : 38%;
+  width: 40%;
+}
+#t1{
+  opacity :0;
+  position: absolute;
+  bottom: 35%;
+  font-size: 120%;
+  right: 30%;
+}
+#jeff{
+  opacity: 0;
+  position: absolute;
+}
+#u3{
+   opacity:0;
+  position: absolute;
+  right : 25%;
+  bottom : 25%;
+}
+#s2{
+  opacity: 0;
+  position: absolute;
+  left : 45%;
+}
+#s1{
+  opacity: 0;
+  position: absolute;
+  right : 55%;
+}
+.apparition_t7{
+ animation: fadeIn 2000ms linear forwards 1s;
+
+}
+
+.apparition_t8{
+ animation: fadeInUp 2000ms linear forwards 2s;
+
+
+}
+.dezoome{
+   animation: dezoome 1s linear forwards 4s;
+}
+.apparition_t9{
+ animation: fadeIn 2000ms linear forwards 5s;
+
+}
+.apparition_t1{
+  animation: fadeIn 2000ms linear forwards 5050ms;
+}
+
+.disparition{
+  animation: fadeOut 2s linear forwards 15s;
+}
+
+.apparition_jeff{
+  animation : apparition 800ms linear forwards 15500ms;
+  top : 0%;
+  height: 50%;
+  width: 40%;
+  left : 30%;
+}
+.apparition_u1{
+ animation: fadeIn 2000ms linear forwards 16s;
+
+}
+.apparition_u2{
+ animation: fadeIn 2000ms linear forwards 16500ms;
+
+}
+
+.disparition_u{
+  animation: disparition 2s linear forwards 26s;
+}
+
+.apparition_s{
+  animation : apparition 800ms linear forwards 26500ms;
+  top : 0%;
+  height: 50%;
+  width: 40%;
+  
+}
+.apparition_u3{
+ animation: fadeIn 2000ms linear forwards 27s;
+}
+
+/* fin slide 9*/
+.dezoom {
+  animation: dezoom 1.5s linear forwards 3s;
+}
+.fad {
+  animation: fad 1.5s linear forwards 3s;
+}
+
+.apparition_text_slide3 {
+  animation: apparition_text_slide3 1.5s linear forwards 4s;
+}
+
+.apparition_ville1_slide3 {
+  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
+}
+
+
+
+
 /** SLIDE 10 **/
 #slide10 #paragraphe10 {
   position: absolute;

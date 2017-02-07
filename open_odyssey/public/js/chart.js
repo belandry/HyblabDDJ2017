@@ -135,6 +135,6 @@ var myConfig = {
 zingchart.render({ 
   id : 'revenu_median', 
   data : myConfig, 
-  height: 500, 
-  width: 900 
+  height: 350, 
+  width: 700 
 });
