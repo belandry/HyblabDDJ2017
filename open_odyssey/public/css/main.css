@@ -658,34 +658,38 @@
 }
 #text1_slide11{position: absolute; top: 5%; left: 30%; font-size: 150%;}
 #text2_slide11{position: absolute; bottom: 5%; left: 20%; font-size: 125%;}
+
 /** SLIDE 12, CREDITS  **/
-#slide12 p{
-  margin: 0 10% 2% 10%;
-}
 
 #p1, #p2, #p3, #social_network {
   opacity: 0;
 }
-#p1{position: absolute; top: 5%; left: 14%; font-size: 105%;}
+
+#paragraphe{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:10%;
+  font-size: 120%;
+}
 
 #social_network {
-  margin-right: 3%;
+  margin-top: 3%;
+  margin-right: 2%;
 }
+
 #social_network li {
-  list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
 }
 
 #social_network img {
-  height: 25px;
-  color: white; 
+  height: 50px;
 }
 
 #bandeau {
   padding: 2% 0 2%;
   background-color: white;
-  height: 14%;
+  height: 15%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -699,13 +703,12 @@
 }
 
 #bandeau img {
-  height: 30px;
+  height: 40px;
 }
 
 #bandeau ul{
   text-align: center;
 }
-
 
 .apparition_p1 {
   animation: apparition 1.5s linear forwards 1s;
@@ -722,6 +725,7 @@
 .apparition_logos {
   animation: apparition 1.5s linear forwards 4s;
 }
+
 
 .apparition_text1_slide10 {
   animation: apparition 1.5s linear forwards 1s;
