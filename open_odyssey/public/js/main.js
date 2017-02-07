@@ -16,18 +16,14 @@ $(document).ready(function() {
         scrollBar: false,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
-        loopBottom: false,
+        loopBottom: true,
         loopTop: false,
         loopHorizontal: true,
         continuousVertical: false,
         continuousHorizontal: false,
         scrollHorizontally: false,
-        interlockedSlides: false,
-        dragAndMove: false,
-        offsetSections: false,
-        resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
+        normalScrollElements: '#slide3, .element2',
         scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
@@ -89,9 +85,7 @@ $(document).ready(function() {
 
             if (index===3)
             {
-                $("#text_slide3_app").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_dezoom);
-                $("#ville1_slide3").one('webkitAnimationEnd oanimationend msAnimationEnd animationend', anim_apres_app_ville1);
-                $("#text_slide3_app").addClass('dezoom');
+                $.fn.fullpage.setAllowScrolling(false);
             }
 
             if (index===11)
@@ -164,7 +158,7 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
-
+/*
 function anim_apres_dezoom (e) {
     $("#titre_slide3").addClass('apparition_titre_slide3');
     $("#ville1_slide3").addClass('apparition_ville1_slide3');
@@ -176,4 +170,4 @@ function anim_apres_app_ville1 (e) {
     $("#ville1_slide3").addClass('disparition_ville1_slide3');
     $("#text_slide3_disp").addClass('disparition_text_slide3');
     $("#ville2_slide3").addClass('apparition_ville2_slide3');
-};
+};*/
