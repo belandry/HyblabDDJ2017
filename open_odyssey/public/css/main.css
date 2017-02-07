@@ -378,12 +378,22 @@
 /** SLIDE 11, CREDITS  **/
 
 #p1, #p2, #p3, #social_network {
-  opacity: 0;
+  opacity: 1;
+}
+
+#paragraphe{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:10%;
+  font-size: 120%;
 }
 
 #social_network {
-  margin-right: 3%;
+  margin-top: 3%;
+  margin-right: 2%;
 }
+
 #social_network li {
   list-style-type: none;
   display: inline-block;
@@ -391,7 +401,7 @@
 }
 
 #social_network img {
-  height: 25px;
+  height: 50px;
   color: white; 
 }
 
