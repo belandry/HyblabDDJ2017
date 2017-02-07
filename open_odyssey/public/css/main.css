@@ -71,14 +71,14 @@
    100% {opacity:0;}
 }
 
-@keyframes dezoom {
+@keyframes dezoom_slide3 {
    to {
     font-size: 100%;
-    top:15%
+    top:8%
   }
 }
 
-@keyframes rezoom {
+@keyframes rezoom_slide3 {
    to {
     font-size: 125%;
     top:38%
@@ -101,13 +101,13 @@
 
 @keyframes de_disparition_ville1_slide3 {
    to {
-    bottom: -60%;
+    bottom: -75%;
   }
 }
 
 @keyframes apparition_ville1_slide3 {
   to {
-    bottom: -60%;
+    bottom: -75%;
   }
 }
 
@@ -126,6 +126,18 @@
 @keyframes de_apparition_ville2_slide3 {
   to {
     left: -38%;
+  }
+}
+
+@keyframes apparition_revenu_median_slide3 {
+  to {
+    left: 3%;
+  }
+}
+
+@keyframes disparition_revenu_median_slide3 {
+  to {
+    left: -75%;
   }
 }
 
@@ -221,12 +233,10 @@
   text-transform : uppercase;
 }
 
-#titre_slide3 {
+#revenu_median {
   position: absolute;
-  font-size: 200%;
-  left:12%;
-  top:45%;
-  opacity:0;
+  top:32%;
+  left:-75%;
 }
 
 #ville1_slide3 {
@@ -234,7 +244,6 @@
     bottom: -180%;
     right: -10%;
     width: 120%;
- 
 }
 
 #ville2_slide3 {
@@ -245,11 +254,11 @@
 }
 
 #text_slide3_app.dezoom {
-  animation: dezoom 1s linear forwards;
+  animation: dezoom_slide3 1s linear forwards;
 }
 
 #text_slide3_app.rezoom {
-  animation: rezoom 1s linear forwards;
+  animation: rezoom_slide3 1s linear forwards;
 }
 
 #titre_slide3.apparition {
@@ -292,43 +301,19 @@
   animation: de_apparition_ville2_slide3 2s linear forwards;
 }
 
+#revenu_median.apparition {
+  animation: apparition_revenu_median_slide3 1.5s linear forwards;
+}
+
+#revenu_median.disparition {
+  animation: disparition_revenu_median_slide3 1.5s linear forwards;
+}
+
 #myChart2 {
   display: flex;
   position: center;
   margin-left: 20%;
 }
-
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
-/*
-.dezoom {
-  animation: dezoom 1.5s linear forwards 10s;
-}
-
-.apparition_titre_slide3 {
-  animation: apparition 1.5s linear forwards;
-}
-
-.apparition_ville1_slide3 {
-  animation: apparition_ville1_slide3 2s linear forwards;
-}
-
-.apparition_ville2_slide3 {
-  animation: apparition_ville2_slide3 2s linear forwards 14s;
-}
-
-.disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 9s;
-}
-
-.disparition_ville1_slide3 {
-  animation: disparition_ville1_slide3 5s linear forwards 10s;
-}
-*/
 
 
 /** SLIDE 4 **/
