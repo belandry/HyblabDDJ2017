@@ -120,6 +120,14 @@ $(document).ready(function() {
                 $('#p3').addClass('apparition_p3');
                 $('#social_network').addClass('apparition_logos');
             }
+            if (index===7) {
+                $("#titre1_s7").addClass('apparition_titre_slide5');
+                $("#titre2_s7").addClass('apparition_temps2_slide5');
+                $("#titre_s7").addClass('dezoom_s7');
+                $("#img_nadia").addClass('apparition_temps4_slide5');
+                $("#texte_s7").addClass('apparition_temps5_slide5');
+
+            }
             if (index===5) {
                 $("#titre_gauche").addClass('apparition_titre_slide5');
                 $("#titre_droite").addClass('apparition_temps2_slide5');

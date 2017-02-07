@@ -78,6 +78,7 @@
   }
 }
 
+
 @keyframes disparition_ville1_slide3 {
    to {
     bottom: 100%;
@@ -93,6 +94,10 @@
 
 .dezoom {
   animation: dezoom 1.5s linear forwards 3s;
+}
+
+.dezoom_s7 {
+  animation: dezoom 1.5s linear forwards 6s;
 }
 
 .apparition_text_slide3 {
@@ -408,8 +413,15 @@
 
 
 /** SLIDE 7 **/
+#titre1_s7{opacity: 0;}
+#titre2_s7{opacity: 0;}
+#titre_s7{position: absolute; left: 0; right: 0; top: 45%;}
+#img_nadia{ position: absolute; bottom: 30%; left: 2%; width: 30%; height: 40%; opacity: 0;}
+#texte_s7{opacity: 0; font-size: 125%; margin-left: 10%}
+#text_presNadia{position: absolute; bottom: 26%; right: 20%;}
+#hr_s7{position: absolute; bottom: 29%; left: 40%;}
 
-#img_nadia{ position: absolute; bottom: 30%; left: 5%; width: 30%; height: 40%; }
+
 
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
 
