@@ -142,7 +142,10 @@
     top: auto;
     left:48%;
     width: 2%;
-    opacity: 0;
+}
+
+#div_apparition_fleche {
+  opacity: 0;
 }
 
 .apparition_fleche {
@@ -378,7 +381,7 @@
 /** SLIDE 11, CREDITS  **/
 
 #p1, #p2, #p3, #social_network {
-  opacity: 1;
+  opacity: 0;
 }
 
 #paragraphe{
@@ -395,14 +398,11 @@
 }
 
 #social_network li {
-  list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
 }
 
 #social_network img {
   height: 50px;
-  color: white; 
 }
 
 #bandeau {
@@ -422,7 +422,7 @@
 }
 
 #bandeau img {
-  height: 30px;
+  height: 40px;
 }
 
 #bandeau ul{

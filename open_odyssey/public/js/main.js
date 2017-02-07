@@ -72,23 +72,14 @@ $(document).ready(function() {
             {
                 $('#fp-nav').hide();
 
-                /* Animation et appartion fleche */
-                $('#fleche').addClass('apparition_fleche');
-                $("#fleche").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
-                    function(e) {
-                         var myElement = document.querySelector("#fleche");
-                        myElement.style.opacity="1";
-                        $('#fleche').removeClass('apparition_fleche');
-                        $('#fleche').addClass('animated bounce infinite');
-                    })
-
+                $('#apparition_fleche').addClass('apparition_fleche');
 
                 /* Reset animation autres pages */
-                $("#text_slide3").removeClass('dezoom');
+                /*$("#text_slide3").removeClass('dezoom');
                 $("#titre_slide3").removeClass('apparition_text_slide3');
                 $("#ville1_side3").removeClass('apparition_ville1_slide3');
                 $("#text_slide3").removeClass('disparition_text_slide3');
-                $("#titre_slide3").removeClass('disparition_text_slide3');
+                $("#titre_slide3").removeClass('disparition_text_slide3');*/
             }
             else
             {
