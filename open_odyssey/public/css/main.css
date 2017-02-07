@@ -78,71 +78,32 @@
   }
 }
 
+@keyframes dezoom_s7 {
+   to {
+    font-size: 130%;
+    top:7%
+  }
+}
+
 
 @keyframes disparition_ville1_slide3 {
    to {
     bottom: 100%;
-    opacity:0;
   }
 }
 
 @keyframes apparition_ville1_slide3 {
   to {
-    bottom: -50%;
+    bottom: -60%;
   }
 }
 
-.dezoom {
-  animation: dezoom 1.5s linear forwards 3s;
+@keyframes apparition_ville2_slide3 {
+  to {
+    left: -2%;
+  }
 }
 
-.dezoom_s7 {
-  animation: dezoom 1.5s linear forwards 6s;
-}
-
-.apparition_text_slide3 {
-  animation: apparition_text_slide3 1.5s linear forwards 4s;
-}
-
-.apparition_ville1_slide3 {
-  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
-}
-
-.disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 8s;
-}
-
-.disparition_ville1_slide3 {
-  animation: disparition_ville1_slide3 2s linear forwards 8s;
-}
-
-.apparition_titre_slide5{
-  animation: apparition 2s linear forwards 2s;
-}
-
-.apparition_temps2_slide5{
-  animation: apparition 2s linear forwards 4s;
-}
-
-.apparition_temps3_slide5{
-  animation: apparition 2s linear forwards 6s;
-}
-
-.apparition_temps4_slide5{
-  animation: apparition 2s linear forwards 8s;
-}
-
-.apparition_temps5_slide5{
-  animation: apparition 2s linear forwards 10s;
-}
-
-.apparition_temps6_slide5{
-  animation: apparition 2s linear forwards 12s;
-}
-
-.apparition_temps7_slide5{
-  animation: apparition 2s linear forwards 14s;
-}
 
 /** CONFIG SLIDES **/
 .section {
@@ -194,7 +155,10 @@
     top: auto;
     left:48%;
     width: 2%;
-    opacity: 0;
+}
+
+#div_apparition_fleche {
+  opacity: 0;
 }
 
 .apparition_fleche {
@@ -242,30 +206,41 @@
 
 #ville1_slide3 {
     position: absolute;
-    bottom: -120%;
+    bottom: -180%;
     right: -10%;
     width: 120%;
-    height: 120%;
+ 
+}
+
+#ville2_slide3 {
+    position: absolute;
+    bottom: -17%;
+    left: -38%;
+    width: 40%;
 }
 
 .dezoom {
-  animation: dezoom 1.5s linear forwards 3s;
+  animation: dezoom 1.5s linear forwards 10s;
 }
 
 .apparition_titre_slide3 {
-  animation: apparition 1.5s linear forwards 4s;
+  animation: apparition 1.5s linear forwards;
 }
 
 .apparition_ville1_slide3 {
-  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
+  animation: apparition_ville1_slide3 2s linear forwards;
+}
+
+.apparition_ville2_slide3 {
+  animation: apparition_ville2_slide3 2s linear forwards 14s;
 }
 
 .disparition_text_slide3 {
-  animation: disparition 1.5s linear forwards 8s;
+  animation: disparition 1.5s linear forwards 9s;
 }
 
 .disparition_ville1_slide3 {
-  animation: disparition_ville1_slide3 5s linear forwards 3s;
+  animation: disparition_ville1_slide3 5s linear forwards 10s;
 }
 
 
@@ -402,6 +377,34 @@
 }
 #bloc4 {position: absolute; bottom: 10%; left: 18%; font-size: 50%;}*/
 
+.apparition_titre_slide5{
+  animation: apparition 2s linear forwards 2s;
+}
+
+.apparition_temps2_slide5{
+  animation: apparition 2s linear forwards 4s;
+}
+
+.apparition_temps3_slide5{
+  animation: apparition 2s linear forwards 6s;
+}
+
+.apparition_temps4_slide5{
+  animation: apparition 2s linear forwards 8s;
+}
+
+.apparition_temps5_slide5{
+  animation: apparition 2s linear forwards 10s;
+}
+
+.apparition_temps6_slide5{
+  animation: apparition 2s linear forwards 12s;
+}
+
+.apparition_temps7_slide5{
+  animation: apparition 2s linear forwards 14s;
+}
+
 
 /** SLIDE 6 **/
 
@@ -413,17 +416,19 @@
 
 
 /** SLIDE 7 **/
-#titre1_s7{opacity: 0;}
-#titre2_s7{opacity: 0;}
-#titre_s7{position: absolute; left: 0; right: 0; top: 45%;}
-#img_nadia{ position: absolute; bottom: 30%; left: 2%; width: 30%; height: 40%; opacity: 0;}
-#texte_s7{opacity: 0; font-size: 125%; margin-left: 10%}
-#text_presNadia{position: absolute; bottom: 26%; right: 20%;}
-#hr_s7{position: absolute; bottom: 29%; left: 40%;}
+#titre1_s7, #titre2_s7{opacity: 0; font-size: 170%;}
+#titre_s7{position: absolute; left: 0; right: 0; top: 35%;}
+#img_nadia{width: 35%; opacity: 0; float: left;}
+#texte_s7{opacity: 0; font-size: 180%; float: right; margin-top: 5%; margin-right: 15%}
 
+.dezoom_s7 {
+  animation: dezoom_s7 1.5s linear forwards 6s;
+}
 
+/** SLIDE 10 **/
 
 #img_nadia2{ position: absolute; bottom: 10%; left: 5%; width: 30%; height: 40%; }
+
 
 /** SLIDE 8 **/
 #myChart2{position: absolute; top: 20%; right: 10%; opacity: 0;}
@@ -431,11 +436,10 @@
 #text_slide8{position: absolute; top : 40%; left: 10%; font-size: 150%; opacity: 0;}
 #source_s8{font-size: 50% !important;}
 
-
 /** SLIDE 11, CREDITS  **/
 
 #p1, #p2, #p3, #social_network {
-  opacity: 1;
+  opacity: 0;
 }
 
 #paragraphe{
@@ -452,14 +456,11 @@
 }
 
 #social_network li {
-  list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
 }
 
 #social_network img {
   height: 50px;
-  color: white; 
 }
 
 #bandeau {
@@ -479,7 +480,7 @@
 }
 
 #bandeau img {
-  height: 30px;
+  height: 40px;
 }
 
 #bandeau ul{
