@@ -59,6 +59,7 @@ $(document).ready(function() {
         //events
         onLeave: function(index, nextIndex, direction)
         {
+            //$('#titre_gauche').hide();
             if (nextIndex===1)
             {
                 $('#fp-nav').fadeOut();
@@ -99,6 +100,37 @@ $(document).ready(function() {
                 $('#p2').addClass('apparition_p2');
                 $('#p3').addClass('apparition_p3');
                 $('#social_network').addClass('apparition_logos');
+            }
+            if (index===7) {
+                $("#titre1_s7").addClass('apparition_titre_slide5');
+                $("#titre2_s7").addClass('apparition_temps2_slide5');
+                $("#titre_s7").addClass('dezoom_s7');
+                $("#img_nadia").addClass('apparition_temps4_slide5');
+                $("#texte_s7").addClass('apparition_temps5_slide5');
+
+            }
+            if (index===5) {
+                $("#titre_gauche").addClass('apparition_titre_slide5');
+                $("#titre_droite").addClass('apparition_temps2_slide5');
+                $("#bloc_texte").addClass('apparition_temps5_slide5');
+                $("#img_bloc1").addClass('apparition_temps2_slide5');
+                $("#img_bloc2").addClass('apparition_temps3_slide5');
+                $("#img_bloc3").addClass('apparition_temps3_slide5');
+                $("#img_bloc4").addClass('apparition_temps3_slide5');
+                $("#img_bloc5").addClass('apparition_temps3_slide5');
+                $("#img_bloc6").addClass('apparition_temps3_slide5');
+                $("#img_bloc7").addClass('apparition_temps3_slide5');
+                $("#img_bloc8").addClass('apparition_temps3_slide5');
+                $("#micro-onde").addClass('apparition_temps6_slide5');
+                $("#lave").addClass('apparition_temps6_slide5');
+                $("#commode").addClass('apparition_temps6_slide5');
+                $("#grille_pain").addClass('apparition_temps6_slide5');
+                $("#traits").addClass('apparition_temps3_slide5');
+                $("#nom_bailleur").addClass('apparition_temps4_slide5');
+                $("#texte_gauche").addClass('apparition_temps7_slide5');
+                $("#ligne").addClass('apparition_temps7_slide5');
+                $("#dates").addClass('apparition_temps4_slide5');
+
             }
         },
         afterRender: function(){},
