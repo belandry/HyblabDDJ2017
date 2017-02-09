@@ -11,15 +11,11 @@ window.onload = function() {
 		page.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 	}
 	else page.attachEvent("onmousewheel", MouseWheelHandler);
-
-	
-
-
 };
 	
 	function MouseWheelHandler(e) { 	
 
-	var minScrollTime = 100;
+	var minScrollTime = 200;
     var now = new Date().getTime();
 
 function processSlide3Scroll() {
