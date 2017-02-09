@@ -1,5 +1,6 @@
 var animation_step_slide3=0;
 var poucentage_apparition_ville1="-75%";
+var scrollTimer, lastScrollFireTime = 0;
 
 window.onload = function() {
 
@@ -10,61 +11,83 @@ window.onload = function() {
 		page.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 	}
 	else page.attachEvent("onmousewheel", MouseWheelHandler);
+
 	
-	function MouseWheelHandler(e) {
 
-		var e = window.event || e; // old IE support
-		var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-		console.log(animation_step_slide3);
+};
+	
+	function MouseWheelHandler(e) { 	
 
-		switch(animation_step_slide3)
-		{
-			case 0:
-			if (delta==-1) {
-				anim_step1_forward();
-				animation_step_slide3++;
-			}
-			else {
-				$.fn.fullpage.setAllowScrolling(true);
-			}
-			break;
+	var minScrollTime = 100;
+    var now = new Date().getTime();
 
-			case 1:
-			if (delta==-1) {
-				anim_step2_forward();
-				animation_step_slide3++;
-			}
-			else {
-    			anim_step2_backward();
-				animation_step_slide3--;
-			}
-			break;
+function processSlide3Scroll() {
 
-			case 2: 
-			if (delta==-1) {
-				$.fn.fullpage.setAllowScrolling(true);
-    			//animation_step_slide3++;
-			}
-			else {
-				
-				anim_step3_backward();
-				animation_step_slide3--;
-			}
-			break;
+			var e = window.event || e; // old IE support
+			var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
-			case 3: 
-			if (delta==-1) {
-				
-			}
-			else {
-				animation_step_slide3--;
-			}
-			break;
-		}
+			console.log(animation_step_slide3);
 
-		return false;
+			switch(animation_step_slide3)
+			{
+				case 0:
+				if (delta==-1) {
+					anim_step1_forward();
+					animation_step_slide3++;
+				}
+				else {
+					$.fn.fullpage.setAllowScrolling(true);
+				}
+				break;
+
+				case 1:
+				if (delta==-1) {
+					anim_step2_forward();
+					animation_step_slide3++;
+				}
+				else {
+	    			anim_step2_backward();
+					animation_step_slide3--;
+				}
+				break;
+
+				case 2: 
+				if (delta==-1) {
+					$.fn.fullpage.setAllowScrolling(true);
+	    			//animation_step_slide3++;
+				}
+				else {
+					
+					anim_step3_backward();
+					animation_step_slide3--;
+				}
+				break;
+
+				case 3: 
+				if (delta==-1) {
+					
+				}
+				else {
+					animation_step_slide3--;
+				}
+				break;
+			}	
+			return false;
 	}
+
+
+	 if (!scrollTimer) {
+        if (now - lastScrollFireTime > (3 * minScrollTime)) {
+            processSlide3Scroll();   // fire immediately on first scroll
+            lastScrollFireTime = now;
+        }
+        scrollTimer = setTimeout(function() {
+            scrollTimer = null;
+            lastScrollFireTime = new Date().getTime();
+            processSlide3Scroll();
+        }, minScrollTime);
+    }
 
 }
 
