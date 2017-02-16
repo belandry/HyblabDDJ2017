@@ -178,7 +178,7 @@
     background-color: #ffd44a;
 }
 
-#slide7, #slide8, #slide9, #slide10, #slide11, #slide12 {
+#slide7, #slide8, #slide9, #slide10, #slide11, #slide12, #slide13{
     background-color: #62ed9d;
 }
 
@@ -549,15 +549,16 @@
 #t5{
   opacity :0;
   position: absolute;
-  top: 44%;
+  top: 50%;
   right: 10%;
   left : 10%;
   
 }
 #t6{
+  font-size: 120%;
   opacity :0;
   position: absolute;
-  bottom: 15%;
+  bottom: 12%;
   right: 10%;
   left : 10%;
   
@@ -647,7 +648,6 @@
 }
 
 
-
 /** SLIDE 7 **/
 #titre1_s7, #titre2_s7{opacity: 0; font-size: 170%;}
 #titre_s7{position: absolute; left: 0; right: 0; top: 35%;}
@@ -684,7 +684,7 @@
 #u1{
    opacity:0;
   position: absolute;
-  right : 25%;
+  width: 100%;
   bottom : 25%;
 
 
@@ -692,7 +692,7 @@
 #u2{
    opacity:0;
   position: absolute;
-  right : 25%;
+  width: 100%;
   bottom : 15%;
 
 
@@ -701,21 +701,14 @@
   opacity: 0;
   position: absolute;
   bottom : 40%;
-
+  width: 100%
 }
-#t8{
-  opacity :0;
-  position : absolute;
-  right: 7%;
-  left: 25%;
 
- 
-}
 #t7{
   opacity:0;
   position: absolute;
-  right : 38%;
-  width: 40%;
+  
+  width: 83%;
 }
 #t1{
   opacity :0;
@@ -731,18 +724,21 @@
 #u3{
    opacity:0;
   position: absolute;
-  right : 25%;
-  bottom : 25%;
+  width: 100%;
+  
+  bottom : 17%;
 }
 #s2{
   opacity: 0;
   position: absolute;
   left : 45%;
+  width: 45%;
 }
 #s1{
   opacity: 0;
   position: absolute;
   right : 55%;
+  width: 45%;
 }
 .apparition_t7{
  animation: fadeIn 2000ms linear forwards 1s;
@@ -798,22 +794,6 @@
 }
 .apparition_u3{
  animation: fadeIn 2000ms linear forwards 27s;
-}
-
-/* fin slide 9*/
-.dezoom {
-  animation: dezoom 1.5s linear forwards 3s;
-}
-.fad {
-  animation: fad 1.5s linear forwards 3s;
-}
-
-.apparition_text_slide3 {
-  animation: apparition_text_slide3 1.5s linear forwards 4s;
-}
-
-.apparition_ville1_slide3 {
-  animation: apparition_ville1_slide3 1.5s linear forwards 5s;
 }
 
 
@@ -873,7 +853,7 @@
 }
 
 #bandeau {
-  padding: 2% 0 2%;
+  padding-bottom: 3%;
   background-color: white;
   height: 15%;
   width: 100%;
@@ -885,7 +865,7 @@
   list-style-type: none;
   display: inline-block;
   vertical-align: middle;
-  margin: 2px 5px 2px;
+  margin: 1px 5px 1px;
 }
 
 #bandeau img {
@@ -938,5 +918,39 @@
 }
 
 .apparition_text2_slide11 {
+  animation: apparition 1.5s linear forwards 2s;
+}
+
+
+/** SLIDE 13 **/
+#partie1_slide13, #partie2_slide13 {
+  opacity: 0;
+}
+
+#slide13 h1 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  text-transform: uppercase;;
+}
+
+#slide13 hr {
+  position: absolute;
+  top: 16%;
+  left: 44%;
+}
+
+#liste_noms li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0% 3% 2%;
+}
+
+.apparition_partie1_slide13 {
+  animation: apparition 1.5s linear forwards 1s;
+}
+
+.apparition_partie2_slide13 {
   animation: apparition 1.5s linear forwards 2s;
 }

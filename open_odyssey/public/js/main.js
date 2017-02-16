@@ -3,7 +3,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['accueil', 'bellevue', 'quartier-bellevue', 'encombrants-solidaires', 'ampleur-association', 'operateurs', 'environnements-solidaires', 'lien-social', 'porte-à-porte', 'explication-nom', 'conclusion', 'crédit'],
+        anchors:['accueil', 'bellevue', 'quartier-bellevue', 'encombrants-solidaires', 'ampleur-association', 'operateurs', 'environnements-solidaires', 'lien-social', 'porte-à-porte', 'explication-nom', 'conclusion', 'crédits', 'partenaires'],
         navigation: true,
         navigationPosition: 'right',
 
@@ -17,13 +17,13 @@ $(document).ready(function() {
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: true,
-        loopTop: false,
-        loopHorizontal: true,
+        loopTop: true,
+        loopHorizontal: false,
         continuousVertical: false,
         continuousHorizontal: false,
         scrollHorizontally: false,
         fadingEffect: false,
-        normalScrollElements: '#slide3, .element2',
+        normalScrollElements: '#slide3',
         scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
@@ -194,6 +194,12 @@ $(document).ready(function() {
                 $('#p2').addClass('apparition_p2');
                 $('#p3').addClass('apparition_p3');
                 $('#social_network').addClass('apparition_logos');
+            }
+
+            if (index===12)
+            {
+                $('#partie1_slide13').addClass('apparition_partie1_slide13');
+                $('#partie2_slide13').addClass('apparition_partie2_slide13');
             }
         },
         afterRender: function(){},
